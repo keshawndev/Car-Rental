@@ -1,1 +1,32 @@
+.header {
+  &__contact-bar {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    font-weight: 800;
+    color: $home-color-5;
+  }
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__navbar {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      &__navdropdown {
+        &__btn {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+        }
+
+        &__list {
+          display: none;
+        }
+      }
+    }
+  }
+}
