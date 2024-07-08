@@ -51,22 +51,36 @@
         &:focus,
         &:active {
           background-color: $home-color--31;
+          transition: all 0.5s ease;
         }
       }
 
       &__navdropdown {
         position: relative;
+
+        &:hover,
+        &:focus,
+        &:focus-within,
+        &:active {
+          background-color: $home-color--31;
+          transition: all 0.5s ease;
+        }
+
+        &:hover &__list,
+        &:focus &__list,
+        &:focus-within &__list {
+          opacity: 1;
+          max-height: auto;
+          transform: translateY(0%);
+          transition: all 0.3s ease-in-out;
+        }
+
         &__btn {
           display: flex;
           align-items: center;
           gap: 0.4rem;
           padding: 0.5rem 1.5rem;
-
-          &:hover,
-          &:focus-within,
-          &:active {
-            background-color: $home-color--31;
-          }
+          cursor: pointer;
 
           &__link--shown {
             &:link,
@@ -85,14 +99,15 @@
         }
 
         &__list {
-          // display: none;
-          display: flex;
+          opacity: 0;
+          max-height: 0;
           flex-direction: column;
           position: absolute;
-          width: 20rem;
           right: 0;
+          transform: translateY(-1.5em);
 
           &__link--hidden {
+            width: 20rem;
             display: inline-block;
             text-decoration: none;
             color: $home-color-5;
@@ -113,6 +128,7 @@
             &:hover,
             &:focus {
               background-color: $home-color--37;
+              transition: all 0.5s ease;
             }
           }
         }

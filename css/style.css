@@ -55,16 +55,26 @@ body {
         color: #716d6e;
         font-weight: bold; }
       .header__nav__navbar__link--shown:hover, .header__nav__navbar__link--shown:focus, .header__nav__navbar__link--shown:active {
-        background-color: #dbdbdb; }
+        background-color: #dbdbdb;
+        transition: all 0.5s ease; }
       .header__nav__navbar__navdropdown {
         position: relative; }
+        .header__nav__navbar__navdropdown:hover, .header__nav__navbar__navdropdown:focus, .header__nav__navbar__navdropdown:focus-within, .header__nav__navbar__navdropdown:active {
+          background-color: #dbdbdb;
+          transition: all 0.5s ease; }
+        .header__nav__navbar__navdropdown:hover .header__nav__navbar__navdropdown__list,
+        .header__nav__navbar__navdropdown:focus .header__nav__navbar__navdropdown__list,
+        .header__nav__navbar__navdropdown:focus-within .header__nav__navbar__navdropdown__list {
+          opacity: 1;
+          max-height: auto;
+          transform: translateY(0%);
+          transition: all 0.3s ease-in-out; }
         .header__nav__navbar__navdropdown__btn {
           display: flex;
           align-items: center;
           gap: 0.4rem;
-          padding: 0.5rem 1.5rem; }
-          .header__nav__navbar__navdropdown__btn:hover, .header__nav__navbar__navdropdown__btn:focus-within, .header__nav__navbar__navdropdown__btn:active {
-            background-color: #dbdbdb; }
+          padding: 0.5rem 1.5rem;
+          cursor: pointer; }
           .header__nav__navbar__navdropdown__btn__link--shown:link, .header__nav__navbar__navdropdown__btn__link--shown:visited {
             display: inline-block;
             text-decoration: none;
@@ -74,12 +84,14 @@ body {
           .header__nav__navbar__navdropdown__btn__link--shown:focus {
             outline: none; }
         .header__nav__navbar__navdropdown__list {
-          display: flex;
+          opacity: 0;
+          max-height: 0;
           flex-direction: column;
           position: absolute;
-          width: 20rem;
-          right: 0; }
+          right: 0;
+          transform: translateY(-1.5em); }
           .header__nav__navbar__navdropdown__list__link--hidden {
+            width: 20rem;
             display: inline-block;
             text-decoration: none;
             color: #716d6e;
@@ -93,4 +105,5 @@ body {
             .header__nav__navbar__navdropdown__list__link--hidden:last-child {
               border-bottom: solid 0.5rem #e7e7e7; }
             .header__nav__navbar__navdropdown__list__link--hidden:hover, .header__nav__navbar__navdropdown__list__link--hidden:focus {
-              background-color: #f5f5f5; }
+              background-color: #f5f5f5;
+              transition: all 0.5s ease; }
