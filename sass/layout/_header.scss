@@ -1,6 +1,7 @@
 .header {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  padding: 0 17rem;
   margin-bottom: 2rem;
 
   &__contact-bar {
@@ -33,7 +34,7 @@
 
     &__navbar {
       display: flex;
-      align-items: end;
+      align-items: center;
       justify-content: end;
       gap: 2rem;
 
