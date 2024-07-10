@@ -80,10 +80,21 @@
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Home page banner -->
     <div class="banner">
-      <form action="" class="banner__reservation-form">
+      <form class="banner__reservation-form">
+        <div class="banner__reservation-form__error-message hidden">
+          <p class="banner__reservation-form__error-message__text">
+            All fields required!
+          </p>
+          <ion-icon
+            name="close"
+            class="banner__reservation-form__error-message__icon"
+          ></ion-icon>
+        </div>
+
         <select
-          name="options-car-type"
           class="banner__reservation-form__select-car-type"
+          name="options-car-type"
+          required
         >
           <option
             value="Select Your Car Type"
@@ -131,7 +142,7 @@
 
         <div class="banner-reservation-form__drop-off-location">
           <label
-            for=""
+            for="drop-off-location"
             class="banner__reservation-form__drop-off-location__label"
             ><ion-icon
               name="location-sharp"
@@ -141,8 +152,9 @@
           </label>
 
           <select
-            name="drop-off-location"
             class="banner-reservation-form__drop-off-location__select__drop-off-location"
+            name="drop-off-location"
+            required
           >
             <option
               value="Santa Monica -2102 Lincoln Blvd"
@@ -177,8 +189,9 @@
           </label>
 
           <select
-            name="drop-off-location"
             class="banner-reservation-form__drop-off-location__select__drop-off-location"
+            name="drop-off-location"
+            required
           >
             <option
               value="3669 Oliver Street Wedgwood Texas"
@@ -216,12 +229,14 @@
             type="date"
             name="drop-off-date"
             class="banner__reservation-form__drop-off-date__selector"
+            required
           />
         </div>
 
         <select
           name="drop-off-date-time-slot"
           class="banner-reservation-form__select__drop-off-date__time-slot"
+          required
         >
           <option
             value="12:00 AM"
@@ -573,12 +588,14 @@
             type="date"
             name="drop-off-date"
             class="banner__reservation-form__drop-off-date__selector"
+            required
           />
         </div>
 
         <select
           name="drop-off-date-time-slot"
           class="banner-reservation-form__select__drop-off-date__time-slot"
+          required
         >
           <option
             value="12:00 AM"
@@ -916,7 +933,54 @@
             11:30 PM
           </option>
         </select>
+
+        <input
+          type="submit"
+          value="CONTINUE CAR RESERVATION"
+          class="banner__reservation-form__submit"
+        />
       </form>
+
+      <div class="banner__slider">
+        <div class="banner__slider__slide-1">
+          <h2 class="banner__slider__slide-1__title">
+            GET 15% OFF YOUR RENTAL
+          </h2>
+          <h3 class="banner__slider__slide-1__sub-title">
+            Treat yourself in USA
+          </h3>
+          <img
+            src="img/Home/car11.png"
+            alt="BMW"
+            class="banner__slider__slide-1__image"
+          />
+        </div>
+
+        <div class="banner__slider__slide-2">
+          <h2 class="banner__slider__slide-2__title">
+            Luxury CARS STARTING AT $28/DAY
+          </h2>
+          <h3 class="banner__slider__slide-2__sub-title">
+            Ride in style with us
+          </h3>
+          <img
+            src="img/Home/car21.png"
+            alt="BMW"
+            class="banner__slider__slide-2__image"
+          />
+        </div>
+
+        <div class="banner__slider__icons">
+          <ion-icon
+            name="chevron-back-outline"
+            class="banner__slider__left-icon"
+          ></ion-icon>
+          <ion-icon
+            name="chevron-forward-outline"
+            class="banner__slider__right-icon"
+          ></ion-icon>
+        </div>
+      </div>
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
 
