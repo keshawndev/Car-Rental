@@ -1,14 +1,14 @@
 .header {
-  width: 100%;
-  margin: auto;
-  padding: 0 17rem;
+  width: 77%;
+  margin: 0 auto;
+  padding: 0 auto;
   margin-bottom: 2rem;
 
   &__contact-bar {
     display: flex;
     justify-content: right;
     gap: 1rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
     margin-bottom: 1rem;
 
     > * {
@@ -106,6 +106,7 @@
           position: absolute;
           right: 0;
           transform: translateY(-1.5em);
+          z-index: 99;
 
           &__link--hidden {
             width: 20rem;
@@ -117,6 +118,7 @@
             border-style: solid;
             border-width: 0 0 1px;
             border-color: $home-color--41;
+            background-color: $home-color--40;
 
             &:first-child {
               border-top: solid 0.5rem $home-color--33;
