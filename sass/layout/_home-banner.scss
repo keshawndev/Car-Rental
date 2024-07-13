@@ -1,43 +1,45 @@
 .banner {
   margin: 0 auto;
-  width: 77%;
   display: grid;
+  // width: 77%;
   grid-template-columns: 1fr 1fr;
   background-color: $home-color--14;
   padding: 5rem 0;
 
-  &__reservation {
-    align-self: center;
+  &__content {
+    &__reservation {
+      align-self: center;
 
-    &__form {
-      padding: 45px 35px 45px 35px;
-      background-color: white;
-      margin: 0rem 1rem;
-      box-shadow: #ffffff 0px 9px 0px 0px, #ffffff 0px -9px 0px 0px,
-        #0000004d 7px 0px 15px -4px, #0000004d -7px 0px 15px -4px;
+      &__form {
+        padding: 45px 35px 45px 35px;
+        background-color: white;
+        margin: 0rem 1rem;
+        box-shadow: #ffffff 0px 9px 0px 0px, #ffffff 0px -9px 0px 0px,
+          #0000004d 7px 0px 15px -4px, #0000004d -7px 0px 15px -4px;
 
-      &__error-message {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.2rem 2rem;
-        background-color: #f8d7da;
-        border: 1px solid #f5c6cb;
-        border-radius: 0.5rem;
+        &__error-message {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1.2rem 2rem;
+          background-color: #f8d7da;
+          border: 1px solid #f5c6cb;
+          border-radius: 0.5rem;
 
-        &__text {
-          color: $home-color-1;
-          font-size: 16px;
-          font-weight: 700;
-        }
-        &__icon {
-          color: $home-color--27;
-          font-size: 2rem;
-          font-weight: 700;
-          --ionicon-stroke-width: 90px;
+          &__text {
+            color: $home-color-1;
+            font-size: 16px;
+            font-weight: 700;
+          }
+          &__icon {
+            color: $home-color--27;
+            font-size: 2rem;
+            font-weight: 700;
+            --ionicon-stroke-width: 90px;
 
-          &:hover {
-            color: $home-color--20;
+            &:hover {
+              color: $home-color--20;
+            }
           }
         }
       }

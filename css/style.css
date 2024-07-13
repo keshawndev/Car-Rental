@@ -65,10 +65,10 @@ body {
         transition: all 0.5s ease; }
       .header__nav__navbar__navdropdown {
         position: relative; }
-        .header__nav__navbar__navdropdown:hover, .header__nav__navbar__navdropdown:focus, .header__nav__navbar__navdropdown:focus-within, .header__nav__navbar__navdropdown:active {
+        .header__nav__navbar__navdropdown:hover, .header__nav__navbar__navdropdown:focus, .header__nav__navbar__navdropdown:active {
           background-color: #dbdbdb;
           transition: all 0.5s ease; }
-        .header__nav__navbar__navdropdown:hover .header__nav__navbar__navdropdown__list,
+        .header__nav__navbar__navdropdown:active .header__nav__navbar__navdropdown__list,
         .header__nav__navbar__navdropdown:focus .header__nav__navbar__navdropdown__list,
         .header__nav__navbar__navdropdown:focus-within .header__nav__navbar__navdropdown__list {
           opacity: 1;
@@ -90,12 +90,13 @@ body {
           .header__nav__navbar__navdropdown__btn__link--shown:focus {
             outline: none; }
         .header__nav__navbar__navdropdown__list {
+          visibility: hidden;
           opacity: 0;
           max-height: 0;
           flex-direction: column;
           position: absolute;
           right: 0;
-          transform: translateY(-1.5em);
+          transform: translateY(1.5em);
           z-index: 99; }
           .header__nav__navbar__navdropdown__list__link--hidden {
             width: 20rem;
@@ -118,19 +119,18 @@ body {
 
 .banner {
   margin: 0 auto;
-  width: 77%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #fec417;
   padding: 5rem 0; }
-  .banner__reservation {
+  .banner__content__reservation {
     align-self: center; }
-    .banner__reservation__form {
+    .banner__content__reservation__form {
       padding: 45px 35px 45px 35px;
       background-color: white;
       margin: 0rem 1rem;
       box-shadow: #ffffff 0px 9px 0px 0px, #ffffff 0px -9px 0px 0px, #0000004d 7px 0px 15px -4px, #0000004d -7px 0px 15px -4px; }
-      .banner__reservation__form__error-message {
+      .banner__content__reservation__form__error-message {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -138,14 +138,14 @@ body {
         background-color: #f8d7da;
         border: 1px solid #f5c6cb;
         border-radius: 0.5rem; }
-        .banner__reservation__form__error-message__text {
+        .banner__content__reservation__form__error-message__text {
           color: #721c24;
           font-size: 16px;
           font-weight: 700; }
-        .banner__reservation__form__error-message__icon {
+        .banner__content__reservation__form__error-message__icon {
           color: #777777;
           font-size: 2rem;
           font-weight: 700;
           --ionicon-stroke-width: 90px; }
-          .banner__reservation__form__error-message__icon:hover {
+          .banner__content__reservation__form__error-message__icon:hover {
             color: #000000; }
