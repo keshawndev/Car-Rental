@@ -1,21 +1,36 @@
 .banner {
   margin: 0 auto;
-  display: grid;
-  // width: 77%;
-  grid-template-columns: 1fr 1fr;
   background-color: $home-color--14;
   padding: 5rem 0;
 
   &__content {
-    &__reservation {
-      align-self: center;
+    margin: 0 auto;
+    display: grid;
+    width: 77%;
+    grid-template-columns: 1fr 1fr;
 
+    &__reservation {
       &__form {
-        padding: 45px 35px 45px 35px;
+        padding: 4.5rem 3.5rem 4.5rem 3.5rem;
         background-color: white;
         margin: 0rem 1rem;
-        box-shadow: #ffffff 0px 9px 0px 0px, #ffffff 0px -9px 0px 0px,
-          #0000004d 7px 0px 15px -4px, #0000004d -7px 0px 15px -4px;
+        box-shadow: 0 9px 0 0 #fff, 0 -9px 0 0 #fff,
+          7px 0 15px -4px rgba(0, 0, 0, 0.3),
+          -7px 0 15px -4px rgba(0, 0, 0, 0.3);
+
+        &__select-car-type,
+        &__select-car-type:focus {
+          padding: 1.2rem 2rem;
+          margin-bottom: 2rem;
+          font-size: 2rem;
+          font-weight: 700;
+          border: 0.2rem solid #efe9e9;
+          appearance: none;
+          width: 100%;
+          background-image: url(../../img/Home/dropdown-icon.png);
+          background-repeat: no-repeat;
+          background-position: right 20px center;
+        }
 
         &__error-message {
           display: flex;
@@ -25,6 +40,7 @@
           background-color: #f8d7da;
           border: 1px solid #f5c6cb;
           border-radius: 0.5rem;
+          margin-bottom: 1.5rem;
 
           &__text {
             color: $home-color-1;
@@ -43,6 +59,10 @@
           }
         }
       }
+    }
+
+    &__slider {
+      padding: 1rem;
     }
   }
 }
