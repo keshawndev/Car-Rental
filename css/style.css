@@ -131,17 +131,6 @@ body {
       background-color: white;
       margin: 0rem 1rem;
       box-shadow: 0 9px 0 0 #fff, 0 -9px 0 0 #fff, 7px 0 15px -4px rgba(0, 0, 0, 0.3), -7px 0 15px -4px rgba(0, 0, 0, 0.3); }
-      .banner__content__reservation__form__select-car-type, .banner__content__reservation__form__select-car-type:focus {
-        padding: 1.2rem 2rem;
-        margin-bottom: 2rem;
-        font-size: 2rem;
-        font-weight: 700;
-        border: 0.2rem solid #efe9e9;
-        appearance: none;
-        width: 100%;
-        background-image: url(../../img/Home/dropdown-icon.png);
-        background-repeat: no-repeat;
-        background-position: right 20px center; }
       .banner__content__reservation__form__error-message {
         display: flex;
         justify-content: space-between;
@@ -162,5 +151,73 @@ body {
           --ionicon-stroke-width: 90px; }
           .banner__content__reservation__form__error-message__icon:hover {
             color: #000000; }
+      .banner__content__reservation__form__select-car-type {
+        padding: 0.9rem 4rem 0.9rem 1rem;
+        color: #565656;
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        border: 0.2rem solid #efe9e9;
+        appearance: none;
+        width: 100%;
+        background-image: url(../../img/Home/dropdown-icon.png);
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+        cursor: pointer;
+        outline: none; }
+      .banner__content__reservation__form__pick-up-location {
+        display: flex;
+        margin-bottom: 2rem; }
+        .banner__content__reservation__form__pick-up-location__label {
+          padding: 1.3rem 1.2rem;
+          align-items: center;
+          font-size: 1.6rem;
+          background-color: #efe9e9;
+          white-space: nowrap;
+          font-weight: 700;
+          color: #716d6e;
+          box-sizing: border-box;
+          display: inline-flex; }
+          .banner__content__reservation__form__pick-up-location__label__icon {
+            font-size: 2rem; }
+        .banner__content__reservation__form__pick-up-location__select {
+          display: block;
+          outline: none;
+          background-image: url(../../img/Home/dropdown-icon.png);
+          background-repeat: no-repeat;
+          background-position: right 20px center;
+          appearance: none;
+          cursor: pointer;
+          border: 2px solid #efe9e9;
+          font-size: 1.5rem;
+          padding-left: 1rem;
+          width: 100%; }
+      .banner__content__reservation__form__drop-off-location {
+        display: flex;
+        margin-bottom: 3rem; }
+        .banner__content__reservation__form__drop-off-location__label {
+          padding: 1.3rem 1.2rem;
+          display: flex;
+          align-items: center;
+          font-size: 1.6rem;
+          background-color: #efe9e9;
+          white-space: nowrap;
+          font-weight: 700;
+          color: #716d6e;
+          box-sizing: border-box; }
+          .banner__content__reservation__form__drop-off-location__label__icon {
+            font-size: 2rem; }
+        .banner__content__reservation__form__drop-off-location__select {
+          display: block;
+          outline: none;
+          background-image: url(../../img/Home/dropdown-icon.png);
+          background-repeat: no-repeat;
+          background-position: right 20px center;
+          appearance: none;
+          cursor: pointer;
+          border: 2px solid #efe9e9;
+          font-size: 1.5rem;
+          padding-left: 1rem;
+          width: 100%; }
     .banner__content__slider {
       padding: 1rem; }
