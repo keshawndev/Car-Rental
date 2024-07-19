@@ -125,15 +125,15 @@ body {
   .banner::after {
     content: "";
     position: absolute;
-    bottom: -40px;
+    bottom: -33px;
     /* Adjust the position */
     left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 4rem solid transparent;
-    border-right: 4rem solid transparent;
-    border-top: 4rem solid #fec417;
+    border-left: 3.5rem solid transparent;
+    border-right: 3.5rem solid transparent;
+    border-top: 3.5rem solid #fec417;
     /* Same color as the container */ }
   .banner__content {
     margin: 0 auto;
@@ -352,3 +352,9 @@ body {
         display: inline-block;
         font-size: 5rem;
         color: #ffffffe6; }
+
+.customer-services__divider {
+  border: none;
+  height: 0.5rem;
+  background-color: #fec417;
+  width: 10%; }

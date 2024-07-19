@@ -7,14 +7,14 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -40px; /* Adjust the position */
+    bottom: -33px; /* Adjust the position */
     left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 4rem solid transparent;
-    border-right: 4rem solid transparent;
-    border-top: 4rem solid $home-color--14; /* Same color as the container */
+    border-left: 3.5rem solid transparent;
+    border-right: 3.5rem solid transparent;
+    border-top: 3.5rem solid $home-color--14; /* Same color as the container */
   }
 
   &__content {
