@@ -1,21 +1,33 @@
-//
-
 .banner {
   margin: 0 auto;
   background-color: $home-color--14;
-  padding: 5rem 0;
+  padding: 6rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px; /* Adjust the position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+    border-top: 4rem solid $home-color--14; /* Same color as the container */
+  }
 
   &__content {
     margin: 0 auto;
     display: grid;
     width: 77%;
     grid-template-columns: 1fr 1fr;
+    gap: 4rem;
 
     &__reservation {
       &__form {
         padding: 4.5rem 3.5rem 4.5rem 3.5rem;
         background-color: white;
-        margin: 0rem 1rem;
         box-shadow: 0 0.9rem 0 0 #fff, 0 -0.9rem 0 0 #fff,
           0.7rem 0 1.5rem -0.4rem rgba(0, 0, 0, 0.3),
           -0.7rem 0 1.5rem -0.4rem rgba(0, 0, 0, 0.3);
@@ -29,6 +41,7 @@
           border: 0.1rem solid #f5c6cb;
           border-radius: 0.5rem;
           margin-bottom: 1.5rem;
+          // display: none;
 
           &__text {
             color: $home-color-1;
@@ -263,7 +276,36 @@
     }
 
     &__slider {
-      padding: 1rem;
+      &__slide-1 {
+        &__title {
+          font-size: 3.6rem;
+          font-weight: 900;
+          color: #fff;
+          line-height: 4.5rem;
+        }
+
+        &__sub-title {
+          font-size: 2.4rem;
+          color: #565656;
+          font-weight: 400;
+          line-height: 4rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 2rem;
+
+        &__left-icon,
+        &__right-icon {
+          display: inline-block;
+          font-size: 5rem;
+          color: #ffffffe6;
+        }
+      }
     }
   }
 }
