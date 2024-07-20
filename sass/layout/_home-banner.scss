@@ -183,6 +183,8 @@
               width: 100%;
               cursor: pointer;
               outline: none;
+              font-weight: 600;
+              letter-spacing: -0.1rem;
             }
           }
 
@@ -198,6 +200,7 @@
             font-size: 1.5rem;
             color: #ffbf00;
             cursor: pointer;
+            font-weight: 600;
           }
         }
 
@@ -237,6 +240,8 @@
               width: 100%;
               cursor: pointer;
               outline: none;
+              font-weight: 600;
+              letter-spacing: -0.1rem;
             }
           }
 
@@ -252,6 +257,7 @@
             font-size: 1.5rem;
             color: #ffbf00;
             cursor: pointer;
+            font-weight: 600;
           }
         }
 
@@ -277,7 +283,7 @@
     }
 
     &__slider {
-      &__slide-1 {
+      &__slide__1 {
         &__title {
           font-size: 3.6rem;
           font-weight: 900;

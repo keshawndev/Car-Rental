@@ -19,11 +19,6 @@ body {
   line-height: 1.7;
   font-style: normal; }
 
-.banner__reservation-form__error-message {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px 1.6rem; }
-
 .header {
   width: 77%;
   margin: 0 auto;
@@ -262,7 +257,9 @@ body {
             padding-left: 1rem;
             width: 100%;
             cursor: pointer;
-            outline: none; }
+            outline: none;
+            font-weight: 600;
+            letter-spacing: -0.1rem; }
         .banner__content__reservation__form__pick-up-date__time-slot {
           padding: 1rem 4rem 1rem 1rem;
           outline: none;
@@ -274,7 +271,8 @@ body {
           width: 100%;
           font-size: 1.5rem;
           color: #ffbf00;
-          cursor: pointer; }
+          cursor: pointer;
+          font-weight: 600; }
       .banner__content__reservation__form__drop-off-date {
         display: flex;
         gap: 2rem;
@@ -304,7 +302,9 @@ body {
             padding-left: 1rem;
             width: 100%;
             cursor: pointer;
-            outline: none; }
+            outline: none;
+            font-weight: 600;
+            letter-spacing: -0.1rem; }
         .banner__content__reservation__form__drop-off-date__time-slot {
           padding: 1rem 4rem 1rem 1rem;
           outline: none;
@@ -316,7 +316,8 @@ body {
           width: 100%;
           font-size: 1.5rem;
           color: #ffbf00;
-          cursor: pointer; }
+          cursor: pointer;
+          font-weight: 600; }
       .banner__content__reservation__form__submit {
         background-color: #ffbf00;
         color: #fff;
@@ -332,12 +333,12 @@ body {
         cursor: pointer; }
       .banner__content__reservation__form__submit:hover {
         background-color: #716d6e; }
-    .banner__content__slider__slide-1__title {
+    .banner__content__slider__slide__1__title {
       font-size: 3.6rem;
       font-weight: 900;
       color: #fff;
       line-height: 4.5rem; }
-    .banner__content__slider__slide-1__sub-title {
+    .banner__content__slider__slide__1__sub-title {
       font-size: 2.4rem;
       color: #565656;
       font-weight: 400;
@@ -353,8 +354,51 @@ body {
         font-size: 5rem;
         color: #ffffffe6; }
 
-.customer-services__divider {
-  border: none;
-  height: 0.5rem;
-  background-color: #fec417;
-  width: 10%; }
+.customer-services {
+  margin: 0 auto;
+  width: 77%;
+  padding: 11.5rem 0rem 8rem; }
+  .customer-services__top-box {
+    margin: 0 auto;
+    margin-bottom: 4rem; }
+    .customer-services__top-box__title {
+      font-size: 4.6rem;
+      font-weight: 900;
+      color: #716d6e; }
+    .customer-services__top-box__sub-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #716d6e;
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .customer-services__top-box__divider {
+      border: none;
+      height: 0.5rem;
+      background-color: #fec417;
+      width: 40%;
+      text-align: center;
+      display: block;
+      margin: 0 auto; }
+  .customer-services__info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; }
+    .customer-services__info-box__1, .customer-services__info-box__2, .customer-services__info-box__3, .customer-services__info-box__4 {
+      background-color: #ededed;
+      padding: 3rem 2rem 5.5rem 3rem; }
+      .customer-services__info-box__1__headline, .customer-services__info-box__2__headline, .customer-services__info-box__3__headline, .customer-services__info-box__4__headline {
+        display: flex;
+        gap: 1.6rem;
+        margin-bottom: 2rem; }
+        .customer-services__info-box__1__headline__icon, .customer-services__info-box__2__headline__icon, .customer-services__info-box__3__headline__icon, .customer-services__info-box__4__headline__icon {
+          font-size: 3rem;
+          background: #fec417;
+          padding: 1rem;
+          color: white; }
+        .customer-services__info-box__1__headline__title, .customer-services__info-box__2__headline__title, .customer-services__info-box__3__headline__title, .customer-services__info-box__4__headline__title {
+          font-size: 3rem;
+          font-weight: 900;
+          color: #716d6e; }
+      .customer-services__info-box__1__text, .customer-services__info-box__2__text, .customer-services__info-box__3__text, .customer-services__info-box__4__text {
+        font-size: 1.8rem;
+        color: #716d6e; }
