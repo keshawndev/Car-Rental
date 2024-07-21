@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  height: 300vh; }
+  height: 900vh; }
 
 body {
   font-family: "lato", sans-serif;
@@ -364,7 +364,8 @@ body {
     .customer-services__top-box__title {
       font-size: 4.6rem;
       font-weight: 900;
-      color: #716d6e; }
+      color: #716d6e;
+      text-align: center; }
     .customer-services__top-box__sub-title {
       font-size: 2rem;
       font-weight: 700;
@@ -402,3 +403,64 @@ body {
       .customer-services__info-box__1__text, .customer-services__info-box__2__text, .customer-services__info-box__3__text, .customer-services__info-box__4__text {
         font-size: 1.8rem;
         color: #716d6e; }
+
+.email-capture__box {
+  background-color: #fec417; }
+  .email-capture__box__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    align-items: center;
+    padding: 10rem 4rem 6rem 4rem; }
+    .email-capture__box__content__title-box__title {
+      font-size: 3rem;
+      font-weight: 900;
+      color: white; }
+    .email-capture__box__content__title-box__sub-title {
+      color: #716d6e;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.3em; }
+    .email-capture__box__content__form__email-input {
+      padding: 17px 15px 14px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      border-radius: 0 0 0 0;
+      border-style: solid;
+      border-width: 0.1rem;
+      width: 100%;
+      border-color: transparent;
+      position: relative; }
+      .email-capture__box__content__form__email-input__button {
+        padding: 0.4rem 1rem;
+        border-style: solid;
+        border-width: 0.2rem;
+        border-color: #b8b6b6;
+        color: #716d6e;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        position: absolute;
+        transform: translate(-8rem, 0.9rem);
+        z-index: 100; }
+        .email-capture__box__content__form__email-input__button:hover {
+          background-color: #716d6e;
+          color: white; }
+  .email-capture__box__icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end; }
+    .email-capture__box__icons__icons-box__twitter {
+      font-size: 3.5rem;
+      color: white;
+      background-color: #36a4cf;
+      padding: 1rem 1.5rem; }
+    .email-capture__box__icons__icons-box__dribble {
+      font-size: 3.5rem;
+      color: white;
+      background-color: #ee636e;
+      padding: 1rem 1.5rem; }
+    .email-capture__box__icons__icons-box__facebook {
+      font-size: 3.5rem;
+      color: white;
+      background-color: #4b8298;
+      padding: 1rem 1.5rem; }

@@ -1,0 +1,84 @@
+.email-capture__box {
+  background-color: $home-color--14;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    align-items: center;
+    padding: 10rem 4rem 6rem 4rem;
+
+    &__title-box {
+      &__title {
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+      }
+
+      &__sub-title {
+        color: #716d6e;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.3em;
+      }
+    }
+
+    &__form {
+      &__email-input {
+        padding: 17px 15px 14px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 0 0 0 0;
+        border-style: solid;
+        border-width: 0.1rem;
+        width: 100%;
+        border-color: transparent;
+        position: relative;
+
+        &__button {
+          padding: 0.4rem 1rem;
+          border-style: solid;
+          border-width: 0.2rem;
+          border-color: #b8b6b6;
+          color: #716d6e;
+          background-color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          position: absolute;
+          transform: translate(-8rem, 0.9rem);
+          z-index: 100;
+
+          &:hover {
+            background-color: #716d6e;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
+
+    &__icons-box {
+      &__twitter {
+        font-size: 3.5rem;
+        color: white;
+        background-color: #36a4cf;
+        padding: 1rem 1.5rem;
+      }
+      &__dribble {
+        font-size: 3.5rem;
+        color: white;
+        background-color: #ee636e;
+        padding: 1rem 1.5rem;
+      }
+      &__facebook {
+        font-size: 3.5rem;
+        color: white;
+        background-color: #4b8298;
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+}
