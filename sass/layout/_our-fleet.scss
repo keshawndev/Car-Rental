@@ -2,6 +2,109 @@
   padding: 10rem 0rem 4rem 0rem;
   margin: 0 auto;
   width: 77%;
-  // &__title {
-  // }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 4.5rem;
+    color: #716d6e;
+  }
+
+  &__cars-list {
+    list-style: none;
+
+    &__item {
+      background-color: #e3e2e2;
+      padding: 1.6rem 0rem 1.6rem 1.5rem;
+      border-top: solid 0.15rem white;
+
+      &:hover {
+        transition: all 0.3s;
+        background-color: #d1cece;
+      }
+
+      &:first-child {
+        background-color: #ffe599;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          transform: rotate(-90deg) translateX(-10%) translateY(110%);
+          width: 0;
+          height: 0;
+          border-left: 2rem solid transparent;
+          border-right: 2rem solid transparent;
+          border-top: 2rem solid #ffe599; /* Same color as the container */
+        }
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #716d6e;
+      }
+    }
+  }
+
+  &__car-details {
+    &__1,
+    &__2,
+    &__3,
+    &__4,
+    &__5,
+    &__6 {
+      &__table {
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+        // width: 100%;
+
+        &__tr-1 {
+          background-color: #ffe599;
+        }
+
+        th,
+        td {
+          border: solid 0.1rem #cccccc;
+          padding: 0.8rem 1.5rem;
+        }
+
+        th > span {
+          font-size: 2.4rem;
+          font-weight: 900;
+          color: #777;
+        }
+
+        th {
+          color: #777;
+          font-size: 1.8rem;
+        }
+
+        td {
+          font-size: 1.3rem;
+          color: #777;
+        }
+      }
+      &__reservation-btn {
+        display: flex;
+        gap: 1rem;
+        padding: 0.6rem 1.5rem;
+        background-color: #ffbf00;
+        border: none;
+
+        &__icon {
+          font-size: 2.4rem;
+          color: white;
+        }
+
+        &__text {
+          font-size: 2.4rem;
+          font-weight: bold;
+          color: white;
+        }
+      }
+    }
+  }
 }
