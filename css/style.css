@@ -473,11 +473,14 @@ body {
     font-size: 3.6rem;
     font-weight: 900;
     line-height: 1.1em;
-    margin-bottom: 4.5rem;
-    color: #716d6e; }
+    margin-bottom: 6.5rem;
+    color: #716d6e;
+    display: flex;
+    justify-content: center; }
   .our-fleet__selection-box {
     display: flex;
-    justify-content: space-between; }
+    justify-content: center;
+    gap: 4.5rem; }
     .our-fleet__selection-box__cars-list {
       list-style: none; }
       .our-fleet__selection-box__cars-list__item {
