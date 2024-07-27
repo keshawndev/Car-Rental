@@ -1,2 +1,50 @@
 .testimonials {
+  &__box {
+    width: 50%;
+    margin: 0 auto;
+
+    &__slide-1,
+    &__slide-2,
+    &__slide-3 {
+      &__comment {
+        &__text {
+          font-size: 2.4rem;
+          color: #716d6e;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        &__name {
+          color: #ffbf00;
+          font-size: 1.8rem;
+          font-weight: 900;
+          text-align: center;
+          margin-bottom: 3.5rem;
+        }
+      }
+
+      &__stars {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: end;
+        margin-bottom: 2.5rem;
+        color: #777;
+
+        &__outside-icon {
+          font-size: 2.5rem;
+        }
+
+        &__inside-icon {
+          font-size: 3.4rem;
+          transform: translateY(0.2rem);
+        }
+      }
+    }
+    &__radio-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
 }
