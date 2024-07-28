@@ -20,9 +20,9 @@
 
   &__content {
     margin: 0 auto;
-    display: grid;
+    display: flex;
     width: 59%;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     gap: 4rem;
 
     &__reservation {
@@ -284,6 +284,9 @@
 
     &__slider {
       &__slide__1 {
+        &__image {
+        }
+
         &__title {
           font-size: 3.6rem;
           font-weight: 900;
