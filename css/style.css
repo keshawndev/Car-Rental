@@ -203,7 +203,12 @@ body {
           border: 0.2rem solid #efe9e9;
           font-size: 1.5rem;
           padding-left: 1rem;
-          width: 100%; }
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-indent: 0;
+          padding-right: 2.5rem; }
       .banner__content__reservation__form__drop-off-location {
         display: flex;
         margin-bottom: 3rem; }
@@ -230,7 +235,12 @@ body {
           border: 0.2rem solid #efe9e9;
           font-size: 1.5rem;
           padding-left: 1rem;
-          width: 100%; }
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-indent: 0;
+          padding-right: 2.8rem; }
       .banner__content__reservation__form__pick-up-date {
         display: flex;
         gap: 2rem;
