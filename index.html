@@ -2109,18 +2109,72 @@
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="locations">
-      <div class="location__box">
-        <p class="location__box__title">Car Rental Locations</p>
-        <form action="" class="location__box__form">
-          <select
-            name="location-options"
-            class="location__box__form__location-select"
+      <div class="locations__box">
+        <div class="locations__box__flex">
+          <label class="locations__box__flex__title"
+            >Car Rental Locations</label
           >
-            <option value="" class="">kjljlk</option>
-          </select>
-        </form>
+
+          <form action="" class="locations__box__flex__form">
+            <select
+              name="location-options"
+              class="locations__box__flex__form__location-select"
+            >
+              <option
+                value="Please select a location"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Please select a location
+              </option>
+              <option
+                value="Santa monica - 2102 Lincoln Blvd"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Santa monica - 2102 Lincoln Blvd
+              </option>
+              <option
+                value="Los Angeles - 5711 w Century Blvd"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Los Angeles - 5711 w Century Blvd
+              </option>
+              <option
+                value="Las Vegas - 6401 Centennial Center Blvd"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Las Vegas - 6401 Centennial Center Blvd
+              </option>
+              <option
+                value="New York - 610 Warren St"
+                class="locations__box__flex__form__location-select__option"
+              >
+                New York - 610 Warren St
+              </option>
+              <option
+                value="Orlando - 2125 W Landstreet Rd"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Orlando - 2125 W Landstreet Rd
+              </option>
+              <option
+                value="Washington - 50 Massachusetts Ave NE"
+                class="locations__box__flex__form__location-select__option"
+              >
+                Washington - 50 Massachusetts Ave NE
+              </option>
+              <option
+                value="Denver - 7800 E Tufts Ave"
+                class="locations____flexbox__form__location-select__option"
+              >
+                Denver - 7800 E Tufts Ave
+              </option>
+            </select>
+          </form>
+        </div>
       </div>
+      <div class="locations__map" id="map"></div>
     </div>
+
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Footer -->
     <!-- 
@@ -2189,6 +2243,7 @@
     ></script>
     <!--  -->
     <!-- Script for google maps -->
+    <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsQ7gkqG4rBoILT6mDQUxnTVmlWgCcVm4"></script>
     <!--  -->
   </body>
