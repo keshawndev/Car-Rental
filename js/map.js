@@ -1,36 +1,49 @@
 let map;
-const locations = {
-  "new-york": { lat: 40.712776, lng: -74.005974 },
-  "los-angeles": { lat: 34.052235, lng: -118.243683 },
-  chicago: { lat: 41.878113, lng: -87.629799 },
-  houston: { lat: 29.760427, lng: -95.369804 },
-  phoenix: { lat: 33.448376, lng: -112.074036 },
-};
+let marker; // Variable to hold the current marker
 
 function initMap() {
-  // Initial map options
+  // Initialize the map with a global view
   map = new google.maps.Map(document.getElementById("map"), {
-    center: locations["new-york"], // Default location
-    zoom: 8,
-  });
-
-  // Add a marker to the default location
-  new google.maps.Marker({
-    position: locations["new-york"],
-    map: map,
+    center: { lat: 20, lng: 0 }, // Center of the world
+    zoom: 2,
   });
 
   // Add event listener for dropdown selection change
   document
-    .getElementById("locationSelect")
+    .querySelector(".locations__hover__box__flex__form__location-select")
     .addEventListener("change", function () {
-      const selectedLocation = locations[this.value];
-      map.setCenter(selectedLocation);
-      new google.maps.Marker({
-        position: selectedLocation,
+      const address = this.value;
+      if (address !== "Please select a location") {
+        geocodeAddress(address);
+      }
+    });
+}
+
+function geocodeAddress(address) {
+  const geocoder = new google.maps.Geocoder();
+  geocoder.geocode({ address: address }, (results, status) => {
+    if (status === "OK") {
+      const location = results[0].geometry.location;
+      map.setCenter(location);
+      map.setZoom(12); // Zoom in to the selected location
+
+      // Remove the previous marker if it exists
+      if (marker) {
+        marker.setMap(null);
+      }
+
+      // Add a new marker for the selected location
+      marker = new google.maps.Marker({
+        position: location,
         map: map,
       });
-    });
+    } else {
+      console.error(
+        "Geocode was not successful for the following reason:",
+        status
+      );
+    }
+  });
 }
 
 // Initialize the map when the window loads

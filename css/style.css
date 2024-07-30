@@ -628,36 +628,39 @@ body {
           border-radius: 50%;
           transform: translate(-50%, -50%); }
 
-.locations__box {
-  background-color: #ffbf00;
-  width: 42%;
-  margin: 0 auto;
-  transform: translateY(4.3rem); }
-  .locations__box__flex {
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 1rem;
-    width: auto;
-    height: auto; }
-    .locations__box__flex__title {
-      font-size: 3.5rem;
-      font-weight: 600;
-      color: #fff; }
-    .locations__box__flex__form__location-select {
-      padding: 1.1rem 4rem 1.1rem 1rem;
-      font-size: 1.8rem;
-      outline: none;
-      border: none;
-      appearance: none;
-      color: #716d6e;
-      background-image: url(../../img/Home/dropdown-icon.png);
-      background-repeat: no-repeat;
-      background-position: right 2rem center; }
-      .locations__box__flex__form__location-select__option {
+.locations__hover {
+  display: flex;
+  justify-content: center; }
+  .locations__hover__box {
+    background-color: #ffbf00;
+    display: inline-block;
+    transform: translateY(4.3rem); }
+    .locations__hover__box__flex {
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      width: auto;
+      height: auto; }
+      .locations__hover__box__flex__title {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #fff;
+        text-wrap: nowrap; }
+      .locations__hover__box__flex__form__location-select {
+        padding: 1.1rem 4rem 1.1rem 1rem;
         font-size: 1.8rem;
-        color: #716d6e; }
+        outline: none;
+        border: none;
+        appearance: none;
+        color: #716d6e;
+        background-image: url(../../img/Home/dropdown-icon.png);
+        background-repeat: no-repeat;
+        background-position: right 2rem center; }
+        .locations__hover__box__flex__form__location-select__option {
+          font-size: 1.8rem;
+          color: #716d6e; }
 
 .locations__map {
   height: 55rem !important;
