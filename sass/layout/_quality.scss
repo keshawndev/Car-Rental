@@ -1,0 +1,116 @@
+.quality__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15rem;
+  &__guaranteed {
+    width: 60%;
+    display: flex;
+    &__group-text {
+      padding: 0 4.5rem 3rem 0;
+      &__title {
+        font-size: 3.6rem;
+        font-weight: 900;
+        margin-bottom: 3.3rem;
+        color: #716d6e;
+      }
+
+      &__sub-title {
+        color: #716d6e;
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 2.3rem;
+      }
+
+      &__text {
+        color: #716d6e;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+      }
+      &__btn-box {
+        display: flex;
+        gap: 1.5rem;
+
+        &__btn-1 {
+          background-color: #ffbf00;
+          transition: all 0.3s;
+          box-shadow: 0.6rem 0.6rem 0 #efe9e9;
+        }
+
+        &__btn-1:hover {
+          background-color: #716d6e;
+        }
+
+        &__btn-2 {
+          background-color: #716d6e;
+          transition: all 0.3s;
+          box-shadow: 0.6rem 0.6rem 0 #efe9e9;
+        }
+
+        &__btn-2:hover {
+          background-color: #ffbf00;
+        }
+
+        &__btn-1,
+        &__btn-2 {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: #fff;
+          outline: none;
+          border: none;
+          padding: 1rem 1.5rem;
+          font-size: 2rem;
+          font-weight: 900;
+          cursor: pointer;
+
+          ion-icon {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+
+    &__img {
+      width: 50%;
+    }
+  }
+  &__tour {
+    width: 60%;
+    display: flex;
+    &__group-text {
+      padding: 0 0 3rem 4.5rem;
+      &__title {
+        font-size: 3.6rem;
+        font-weight: 900;
+        margin-bottom: 3.3rem;
+        color: #716d6e;
+      }
+
+      &__sub-title {
+        color: #716d6e;
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 2.3rem;
+      }
+
+      &__text-1 {
+        color: #716d6e;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+      }
+
+      &__text-2 {
+        color: #716d6e;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+
+    &__img {
+      width: 50%;
+    }
+  }
+}
