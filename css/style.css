@@ -389,7 +389,7 @@ body {
       border: none;
       height: 0.5rem;
       background-color: #fec417;
-      width: 40%;
+      width: 10%;
       text-align: center;
       display: block;
       margin: 0 auto; }
@@ -674,7 +674,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15rem; }
+  gap: 15rem;
+  margin-bottom: 15rem; }
   .quality__box__guaranteed {
     width: 60%;
     display: flex; }
@@ -729,7 +730,7 @@ body {
     width: 60%;
     display: flex; }
     .quality__box__tour__group-text {
-      padding: 0 0 3rem 4.5rem; }
+      padding: 0 0 0 4.5rem; }
       .quality__box__tour__group-text__title {
         font-size: 3.6rem;
         font-weight: 900;
@@ -749,5 +750,41 @@ body {
         color: #716d6e;
         font-size: 1.8rem;
         font-weight: 400; }
-    .quality__box__tour__img {
-      width: 50%; }
+    .quality__box__tour__video {
+      width: 140%; }
+
+.partner__box {
+  background-color: #f9f9f9; }
+  .partner__box__content {
+    margin: 0 auto;
+    width: 60%;
+    padding: 11.5rem 0rem 8rem; }
+    .partner__box__content__title-box {
+      margin: 0 auto;
+      margin-bottom: 4rem; }
+      .partner__box__content__title-box__title {
+        font-size: 4.6rem;
+        font-weight: 900;
+        color: #716d6e;
+        text-align: center; }
+      .partner__box__content__title-box__divider {
+        border: none;
+        height: 0.5rem;
+        background-color: #fec417;
+        width: 10%;
+        text-align: center;
+        display: block;
+        margin: 0 auto; }
+    .partner__box__content__text {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 8rem;
+      color: #716d6e; }
+    .partner__box__content__img-box {
+      display: flex;
+      gap: 10rem;
+      overflow: hidden; }
+      .partner__box__content__img-box__img {
+        width: 100%;
+        height: 100%; }
