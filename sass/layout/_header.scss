@@ -1,5 +1,5 @@
 .header {
-  width: 60%;
+  max-width: 75%;
   margin: 0 auto;
   margin-bottom: 3rem;
 
@@ -25,11 +25,11 @@
   &__nav {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
 
     &__logo {
       height: auto;
       cursor: pointer;
+      display: inline-block;
     }
 
     &__navbar {

@@ -1,0 +1,19 @@
+@media (max-width: 1319px) {
+  .contact-us__centers__box__customer-center__box__text-group__title {
+    font-size: 2.2rem;
+  }
+
+  .header__nav__navbar__link--shown:link {
+    font-size: 1.5rem;
+  }
+
+  .header__nav__navbar__navdropdown__btn__link--shown {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1263px) {
+  .header__nav__logo {
+    width: 25%;
+  }
+}

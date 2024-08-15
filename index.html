@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Rental</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
     </style>
@@ -24,13 +25,11 @@
         >
       </div>
       <div class="header__nav">
-        <a href="index.html">
-          <img
-            src="img/Home/car_rental_logo.gif"
-            alt="Company Logo"
-            class="header__nav__logo"
-          />
-        </a>
+        <img
+          src="img/Home/car_rental_logo.gif"
+          class="header__nav__logo"
+          alt="Company Logo"
+        />
         <nav class="header__nav__navbar">
           <div class="header__nav__navbar__navdropdown" tabindex="0">
             <div class="header__nav__navbar__navdropdown__btn">
@@ -2212,15 +2211,19 @@
         />
       </div>
       <div class="quality__box__tour">
-        <iframe
-          class="quality__box__tour__video"
-          src="https://www.youtube.com/embed/9_5pjZlWV3A"
-          title="Car Rental Orlando"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="quality__box__tour__video-wrapper">
+          <iframe
+            width="1465px"
+            height="915px"
+            class="quality__box__tour__video-wrapper__video"
+            src="https://www.youtube.com/embed/9_5pjZlWV3A"
+            title="Car Rental Orlando"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="quality__box__tour__group-text">
           <p class="quality__box__tour__group-text__title">
             Watch our info tour

@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15rem;
+  gap: 6rem;
   margin-bottom: 15rem;
+
   &__guaranteed {
-    width: 60%;
+    max-width: 75%;
     display: flex;
     &__group-text {
       padding: 0 4.5rem 3rem 0;
@@ -62,7 +63,7 @@
           outline: none;
           border: none;
           padding: 1rem 1.5rem;
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-weight: 900;
           cursor: pointer;
 
@@ -74,11 +75,14 @@
     }
 
     &__img {
-      width: 50%;
+      height: auto;
+      max-width: 50%;
+      object-fit: contain;
+      white-space: none;
     }
   }
   &__tour {
-    width: 60%;
+    width: 75%;
     display: flex;
     &__group-text {
       padding: 0 0 0 4.5rem;
@@ -110,8 +114,11 @@
       }
     }
 
-    &__video {
-      width: 140%;
+    &__video-wrapper {
+      &__video {
+        width: 500px;
+        height: 370px;
+      }
     }
   }
 }

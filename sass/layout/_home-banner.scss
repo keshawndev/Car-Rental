@@ -21,7 +21,7 @@
   &__content {
     margin: 0 auto;
     display: flex;
-    width: 60%;
+    max-width: 75%;
     justify-content: center;
     gap: 4rem;
 
@@ -297,6 +297,7 @@
     &__slider {
       &__slide__1 {
         &__image {
+          max-width: 100%;
         }
 
         &__title {
