@@ -2,10 +2,10 @@
   background-color: $home-color--14;
 
   &__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    display: flex;
     align-items: center;
     padding: 6rem 4rem 6rem 4rem;
+    gap: 4rem;
 
     &__title-box {
       &__title {
@@ -23,6 +23,8 @@
     }
 
     &__form {
+      flex-grow: 1;
+      flex-shrink: 1;
       &__email-input {
         padding: 17px 15px 14px;
         font-size: 1.4rem;
@@ -31,6 +33,7 @@
         border-style: solid;
         border-width: 0.1rem;
         width: 100%;
+
         border-color: transparent;
         position: relative;
         outline: none;
@@ -59,7 +62,7 @@
   &__icons {
     display: flex;
     gap: 1.5rem;
-    justify-content: end;
+    margin-right: 0;
 
     &__icons-box {
       &__twitter {

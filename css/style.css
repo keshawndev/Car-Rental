@@ -428,6 +428,7 @@ body {
       padding: 3rem 2rem 5.5rem 3rem; }
       .customer-services__info-box__1__headline, .customer-services__info-box__2__headline, .customer-services__info-box__3__headline, .customer-services__info-box__4__headline {
         display: flex;
+        align-content: center;
         gap: 1.6rem;
         margin-bottom: 2rem; }
         .customer-services__info-box__1__headline__icon, .customer-services__info-box__2__headline__icon, .customer-services__info-box__3__headline__icon, .customer-services__info-box__4__headline__icon {
@@ -446,10 +447,10 @@ body {
 .email-capture__box {
   background-color: #fec417; }
   .email-capture__box__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    display: flex;
     align-items: center;
-    padding: 6rem 4rem 6rem 4rem; }
+    padding: 6rem 4rem 6rem 4rem;
+    gap: 4rem; }
     .email-capture__box__content__title-box__title {
       font-size: 3rem;
       font-weight: 900;
@@ -459,36 +460,39 @@ body {
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.3em; }
-    .email-capture__box__content__form__email-input {
-      padding: 17px 15px 14px;
-      font-size: 1.4rem;
-      font-weight: 400;
-      border-radius: 0 0 0 0;
-      border-style: solid;
-      border-width: 0.1rem;
-      width: 100%;
-      border-color: transparent;
-      position: relative;
-      outline: none; }
-      .email-capture__box__content__form__email-input__button {
-        padding: 0.4rem 1rem;
+    .email-capture__box__content__form {
+      flex-grow: 1;
+      flex-shrink: 1; }
+      .email-capture__box__content__form__email-input {
+        padding: 17px 15px 14px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 0 0 0 0;
         border-style: solid;
-        border-width: 0.2rem;
-        border-color: #b8b6b6;
-        color: #716d6e;
-        background-color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        position: absolute;
-        transform: translate(-8rem, 0.9rem);
-        z-index: 100; }
-        .email-capture__box__content__form__email-input__button:hover {
-          background-color: #716d6e;
-          color: white; }
+        border-width: 0.1rem;
+        width: 100%;
+        border-color: transparent;
+        position: relative;
+        outline: none; }
+        .email-capture__box__content__form__email-input__button {
+          padding: 0.4rem 1rem;
+          border-style: solid;
+          border-width: 0.2rem;
+          border-color: #b8b6b6;
+          color: #716d6e;
+          background-color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          position: absolute;
+          transform: translate(-8rem, 0.9rem);
+          z-index: 100; }
+          .email-capture__box__content__form__email-input__button:hover {
+            background-color: #716d6e;
+            color: white; }
   .email-capture__box__icons {
     display: flex;
     gap: 1.5rem;
-    justify-content: end; }
+    margin-right: 0; }
     .email-capture__box__icons__icons-box__twitter {
       font-size: 3.5rem;
       color: white;
@@ -700,11 +704,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
   margin-bottom: 15rem; }
   .quality__box__guaranteed {
     max-width: 75%;
-    display: flex; }
+    display: flex;
+    margin-bottom: 6rem;
+    align-items: center; }
     .quality__box__guaranteed__group-text {
       padding: 0 4.5rem 3rem 0; }
       .quality__box__guaranteed__group-text__title {
@@ -757,7 +762,8 @@ body {
       white-space: none; }
   .quality__box__tour {
     width: 75%;
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .quality__box__tour__group-text {
       padding: 0 0 0 4.5rem; }
       .quality__box__tour__group-text__title {
@@ -779,16 +785,28 @@ body {
         color: #716d6e;
         font-size: 1.8rem;
         font-weight: 400; }
-    .quality__box__tour__video-wrapper__video {
-      width: 500px;
-      height: 370px; }
+    .quality__box__tour__video-wrapper {
+      width: 100%;
+      max-width: 500px;
+      position: relative;
+      padding-bottom: 30%;
+      /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden; }
+      .quality__box__tour__video-wrapper__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0; }
 
 .partner__box {
   background-color: #f9f9f9; }
   .partner__box__content {
     margin: 0 auto;
     max-width: 75%;
-    padding: 11.5rem 0rem 8rem; }
+    padding: 8rem 0rem 8rem; }
     .partner__box__content__title-box {
       margin: 0 auto;
       margin-bottom: 4rem; }
@@ -809,8 +827,9 @@ body {
       text-align: center;
       font-size: 1.8rem;
       font-weight: 400;
-      margin-bottom: 8rem;
-      color: #716d6e; }
+      color: #716d6e;
+      max-width: 90%;
+      margin: 0 auto 8rem auto; }
     .partner__box__content__img-box {
       display: flex;
       gap: 10rem;
@@ -820,7 +839,7 @@ body {
         height: 100%; }
 
 .contact-us-center {
-  padding: 9rem 0 18rem 0;
+  padding: 9rem 0 15rem 0;
   display: flex;
   justify-content: center; }
 
@@ -889,7 +908,10 @@ body {
       color: #fff;
       padding: 0.6rem 1.5rem;
       box-shadow: 0.6rem 0.6rem 0 #efe9e9;
-      margin: 0 auto; }
+      margin: 0 auto;
+      cursor: pointer; }
+      .contact-us__form-box__form__submit:hover {
+        background-color: #716d6e; }
   .contact-us__centers__box__customer-center__text {
     font-size: 1.8rem;
     color: #716d6e;

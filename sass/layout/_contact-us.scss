@@ -1,5 +1,5 @@
 .contact-us-center {
-  padding: 9rem 0 18rem 0;
+  padding: 9rem 0 15rem 0;
   display: flex;
   justify-content: center;
 }
@@ -90,6 +90,11 @@
         padding: 0.6rem 1.5rem;
         box-shadow: 0.6rem 0.6rem 0 #efe9e9;
         margin: 0 auto;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #716d6e;
+        }
       }
     }
   }
@@ -106,6 +111,7 @@
       &__box {
         display: flex;
         gap: 1.5rem;
+
         img {
           border: solid 0.2rem #ffbf00;
         }
