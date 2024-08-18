@@ -1,5 +1,10 @@
+.hidden-parts-of-the-fleet {
+  display: none;
+}
+
 .our-fleet {
-  padding: 10rem 0rem 4rem 0rem;
+  max-width: 113rem;
+  padding: 10rem 0rem 0rem 0rem;
   margin: 0 auto;
   margin-bottom: 10rem;
 
@@ -64,8 +69,125 @@
       &__5,
       &__6 {
         > img {
-          height: auto;
-          width: auto;
+          max-width: 65%;
+        }
+        display: flex;
+        align-items: center;
+        gap: 4.5rem;
+
+        &__reserve-box {
+          &__table {
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+
+            &__tr-1 {
+              background-color: #ffe599;
+            }
+
+            th,
+            td {
+              border: solid 0.1rem #cccccc;
+              padding: 0.8rem 1.5rem;
+            }
+
+            th > span {
+              font-size: 2.4rem;
+              font-weight: 900;
+              color: #777;
+            }
+
+            th {
+              color: #777;
+              font-size: 1.8rem;
+            }
+
+            td {
+              font-size: 1.3rem;
+              color: #777;
+            }
+          }
+          &__reservation-btn {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            padding: 0.6rem 1.5rem;
+            background-color: #ffbf00;
+            border: none;
+            box-shadow: 0.6rem 0.6rem 0 #efe9e9;
+
+            &:hover {
+              background-color: #716d6e;
+              transition: all 0.3s;
+            }
+
+            &__icon {
+              font-size: 2.4rem;
+              color: white;
+            }
+
+            &__text {
+              font-size: 2.4rem;
+              font-weight: bold;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-fleet-small {
+  max-width: 113rem;
+  padding: 10rem 0rem 0rem 0rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  display: none;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 6.5rem;
+    color: #716d6e;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__selection-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4.5rem;
+
+    &__cars-list {
+      height: 4rem;
+      max-width: 18rem;
+      padding-left: 2rem;
+      background-image: url(../../img/Home/dropdown-icon.png);
+      background-repeat: no-repeat;
+      background-position: right 2rem center;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+      border: 0.2rem solid #efe9e9;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-indent: 0;
+      width: 100%;
+      padding-right: 3rem;
+    }
+
+    &__car-details {
+      &__1,
+      &__2,
+      &__3,
+      &__4,
+      &__5,
+      &__6 {
+        > img {
+          max-width: 100%;
         }
         display: flex;
         align-items: center;
