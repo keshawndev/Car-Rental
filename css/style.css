@@ -19,7 +19,7 @@ body {
   font-style: normal; }
 
 .header {
-  max-width: 75%;
+  max-width: 113rem;
   margin: 0 auto;
   margin-bottom: 3rem; }
   .header__contact-bar {
@@ -49,8 +49,6 @@ body {
       gap: 2rem; }
       .header__nav__navbar__link--shown {
         padding: 0.5rem 1.5rem; }
-        .header__nav__navbar__link--shown:last-child {
-          padding: 0.5rem 0rem 0.5rem 1.5rem; }
         .header__nav__navbar__link--shown:link, .header__nav__navbar__link--shown:visited {
           display: inline-block;
           text-decoration: none;
@@ -160,7 +158,7 @@ body {
   .banner__content {
     margin: 0 auto;
     display: flex;
-    max-width: 75%;
+    max-width: 113rem;
     justify-content: center;
     gap: 4rem; }
     .banner__content__reservation__form {
@@ -395,7 +393,7 @@ body {
 
 .customer-services {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 113rem;
   padding: 11.5rem 0rem 8rem; }
   .customer-services__top-box {
     margin: 0 auto;
@@ -447,10 +445,13 @@ body {
 .email-capture__box {
   background-color: #fec417; }
   .email-capture__box__content {
+    max-width: 150rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 6rem 4rem 6rem 4rem;
-    gap: 4rem; }
+    gap: 4rem;
+    margin: 0 auto; }
     .email-capture__box__content__title-box__title {
       font-size: 3rem;
       font-weight: 900;
@@ -605,7 +606,7 @@ body {
 .testimonials {
   margin-bottom: 9rem; }
   .testimonials__box {
-    max-width: 60%;
+    max-width: 113rem;
     margin: 0 auto; }
     .testimonials__box__slide-1__comment__text, .testimonials__box__slide-2__comment__text, .testimonials__box__slide-3__comment__text {
       font-size: 2.4rem;
@@ -706,8 +707,9 @@ body {
   align-items: center;
   margin-bottom: 15rem; }
   .quality__box__guaranteed {
-    max-width: 75%;
-    display: flex;
+    max-width: 113rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 6rem;
     align-items: center; }
     .quality__box__guaranteed__group-text {
@@ -757,12 +759,13 @@ body {
             font-size: 2.4rem; }
     .quality__box__guaranteed__img {
       height: auto;
-      max-width: 50%;
-      object-fit: contain;
+      max-width: 100%;
+      object-fit: fill;
       white-space: none; }
   .quality__box__tour {
-    width: 75%;
-    display: flex;
+    max-width: 113rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center; }
     .quality__box__tour__group-text {
       padding: 0 0 0 4.5rem; }
@@ -786,12 +789,10 @@ body {
         font-size: 1.8rem;
         font-weight: 400; }
     .quality__box__tour__video-wrapper {
+      max-width: 72rem;
       width: 100%;
-      max-width: 500px;
       position: relative;
-      padding-bottom: 30%;
-      /* 16:9 aspect ratio */
-      height: 0;
+      padding-bottom: 56.25%;
       overflow: hidden; }
       .quality__box__tour__video-wrapper__video {
         position: absolute;
@@ -799,13 +800,13 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        border: 0; }
+        max-height: 46.3rem; }
 
 .partner__box {
   background-color: #f9f9f9; }
   .partner__box__content {
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 113rem;
     padding: 8rem 0rem 8rem; }
     .partner__box__content__title-box {
       margin: 0 auto;
@@ -844,7 +845,7 @@ body {
   justify-content: center; }
 
 .contact-us {
-  max-width: 75%;
+  max-width: 113rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;

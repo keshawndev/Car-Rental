@@ -33,30 +33,14 @@
   }
 }
 
-@media (max-width: 1263px) {
-  .header__nav__logo {
-    width: 25%;
-  }
-}
-
 /* 900px - 1199px  Tablets Horizontals */
 
-@media (max-width: 1199px) {
+@media (max-width: 1330px) {
   html {
-    font-size: 0.5rem;
-  }
-
-  .header__nav__navbar__link--shown {
-    padding: 0.5rem 0rem;
-  }
-
-  .header__nav__navbar__navdropdown__btn {
-    padding: 0.5rem 0rem;
+    font-size: 0.45rem;
   }
 }
 
-@media (max-width: 937px) {
-}
 /* 600px - 899px Tablets Verticle */
 
 /* 300px - 599px Phones */

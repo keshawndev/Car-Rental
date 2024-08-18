@@ -2,10 +2,13 @@
   background-color: $home-color--14;
 
   &__content {
+    max-width: 150rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 6rem 4rem 6rem 4rem;
     gap: 4rem;
+    margin: 0 auto;
 
     &__title-box {
       &__title {
