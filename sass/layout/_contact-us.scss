@@ -9,8 +9,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
-
   justify-content: center;
+
   &__form-box {
     &__text {
       color: #716d6e;
@@ -114,6 +114,7 @@
 
         img {
           border: solid 0.2rem #ffbf00;
+          max-width: 30%;
         }
 
         background-color: #ededed;

@@ -8,6 +8,14 @@
   .email-capture__box__content__form__email-input__button {
     transform: translate(-8rem, 1rem);
   }
+
+  .partner__box__content__img-box {
+    gap: 9rem;
+  }
+
+  .partner__box__content__img-box__img {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 1174px) {
@@ -18,9 +26,35 @@
   .email-capture__box__content__form__email-input__button {
     transform: translate(-8rem, 1.3rem);
   }
+
+  .partner__box__content__img-box {
+    gap: 6.5rem;
+  }
+
+  .partner__box__content__img-box__img {
+    max-width: 20%;
+  }
 }
 
 @media (max-width: 989px) {
+  html {
+    font-size: 0.45rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 1.5rem);
+  }
+
+  .partner__box__content__img-box {
+    gap: 6rem;
+  }
+
+  .partner__box__content__img-box__img {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 889px) {
   html {
     font-size: 0.4rem;
   }
@@ -32,6 +66,56 @@
 
 /* 900px - 1199px  Tablets Horizontals */
 
+@media (max-width: 810px) {
+  html {
+    font-size: 0.37rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 3rem);
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 0.33rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 3rem);
+  }
+}
+
+@media (max-width: 705px) {
+  html {
+    font-size: 0.32rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 3rem);
+  }
+}
+
+@media (max-width: 641px) {
+  html {
+    font-size: 0.29rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 3rem);
+  }
+}
+
 /* 600px - 899px Tablets Verticle */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 0.29rem;
+  }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-8rem, 3rem);
+  }
+}
 
 /* 300px - 599px Phones */
