@@ -72,7 +72,7 @@
   }
 
   .email-capture__box__content__form__email-input__button {
-    transform: translate(-8rem, 3rem);
+    transform: translate(-8rem, 2.1rem);
   }
 }
 
@@ -82,7 +82,7 @@
   }
 
   .email-capture__box__content__form__email-input__button {
-    transform: translate(-8rem, 3rem);
+    transform: translate(-8rem, 2.3rem);
   }
 }
 
@@ -106,16 +106,54 @@
   }
 }
 
-/* 600px - 899px Tablets Verticle */
+@media (max-width: 601px) {
+  .header__visibility {
+    display: flex;
+  }
 
-@media (max-width: 600px) {
   html {
-    font-size: 0.29rem;
+    font-size: 0.5rem;
+  }
+
+  .header__contact-bar {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .banner__content {
+    flex-direction: column;
+    max-width: 80%;
+  }
+
+  .banner__content__slider {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .customer-services {
+    max-width: 80%;
+  }
+
+  .customer-services__info-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .email-capture__box__content {
+    flex-direction: column;
+  }
+
+  .email-capture__box__content__form__email-input {
+    width: 50rem;
   }
 
   .email-capture__box__content__form__email-input__button {
-    transform: translate(-8rem, 3rem);
+    transform: translate(-8rem, 1.3rem);
   }
 }
+/* 600px - 899px Tablets Verticle */
 
 /* 300px - 599px Phones */
