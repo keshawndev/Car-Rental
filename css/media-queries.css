@@ -112,7 +112,7 @@
   }
 
   html {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
   }
 
   .header__contact-bar {
@@ -125,6 +125,17 @@
 
   .banner__content {
     flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .banner__content__slider__slide__1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner__content__slider__slide__1__image {
     max-width: 80%;
   }
 
@@ -152,6 +163,37 @@
 
   .email-capture__box__content__form__email-input__button {
     transform: translate(-8rem, 1.3rem);
+  }
+
+  .our-fleet {
+    display: none;
+  }
+
+  .our-fleet-small__title {
+    text-align: center;
+  }
+
+  .our-fleet-small {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-fleet-small__selection-box__position__car-details__1,
+  .our-fleet-small__selection-box__position__car-details__2,
+  .our-fleet-small__selection-box__position__car-details__3,
+  .our-fleet-small__selection-box__position__car-details__4,
+  .our-fleet-small__selection-box__position__car-details__5,
+  .our-fleet-small__selection-box__position__car-details__6 {
+    flex-direction: column;
+  }
+
+  .our-fleet-small__selection-box__position__car-details__1__reserve-box,
+  .our-fleet-small__selection-box__position__car-details__2__reserve-box,
+  .our-fleet-small__selection-box__position__car-details__3__reserve-box,
+  .our-fleet-small__selection-box__position__car-details__4__reserve-box,
+  .our-fleet-small__selection-box__position__car-details__5__reserve-box,
+  .our-fleet-small__selection-box__position__car-details__6__reserve-box {
   }
 }
 /* 600px - 899px Tablets Verticle */

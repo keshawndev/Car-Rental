@@ -158,7 +158,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 4.5rem;
 
     &__cars-list {
       height: 4rem;
@@ -177,76 +176,83 @@
       text-indent: 0;
       width: 100%;
       padding-right: 3rem;
+
+      position: absolute;
+      left: 30.5rem;
+      z-index: 999;
     }
 
-    &__car-details {
-      &__1,
-      &__2,
-      &__3,
-      &__4,
-      &__5,
-      &__6 {
-        > img {
-          max-width: 100%;
-        }
-        display: flex;
-        align-items: center;
-        gap: 4.5rem;
-
-        &__reserve-box {
-          &__table {
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-
-            &__tr-1 {
-              background-color: #ffe599;
-            }
-
-            th,
-            td {
-              border: solid 0.1rem #cccccc;
-              padding: 0.8rem 1.5rem;
-            }
-
-            th > span {
-              font-size: 2.4rem;
-              font-weight: 900;
-              color: #777;
-            }
-
-            th {
-              color: #777;
-              font-size: 1.8rem;
-            }
-
-            td {
-              font-size: 1.3rem;
-              color: #777;
-            }
+    &__position {
+      position: relative;
+      &__car-details {
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5,
+        &__6 {
+          > img {
+            max-width: 100%;
           }
-          &__reservation-btn {
-            width: 100%;
-            display: flex;
-            gap: 1rem;
-            padding: 0.6rem 1.5rem;
-            background-color: #ffbf00;
-            border: none;
-            box-shadow: 0.6rem 0.6rem 0 #efe9e9;
+          display: flex;
+          align-items: center;
+          gap: 4.5rem;
 
-            &:hover {
-              background-color: #716d6e;
-              transition: all 0.3s;
+          &__reserve-box {
+            &__table {
+              border-collapse: collapse;
+              margin-bottom: 1.5rem;
+
+              &__tr-1 {
+                background-color: #ffe599;
+              }
+
+              th,
+              td {
+                border: solid 0.1rem #cccccc;
+                padding: 0.8rem 1.5rem;
+              }
+
+              th > span {
+                font-size: 2.4rem;
+                font-weight: 900;
+                color: #777;
+              }
+
+              th {
+                color: #777;
+                font-size: 1.8rem;
+              }
+
+              td {
+                font-size: 1.3rem;
+                color: #777;
+              }
             }
+            &__reservation-btn {
+              width: 100%;
+              display: flex;
+              gap: 1rem;
+              padding: 0.6rem 1.5rem;
+              background-color: #ffbf00;
+              border: none;
+              box-shadow: 0.6rem 0.6rem 0 #efe9e9;
 
-            &__icon {
-              font-size: 2.4rem;
-              color: white;
-            }
+              &:hover {
+                background-color: #716d6e;
+                transition: all 0.3s;
+              }
 
-            &__text {
-              font-size: 2.4rem;
-              font-weight: bold;
-              color: white;
+              &__icon {
+                font-size: 2.4rem;
+                color: white;
+              }
+
+              &__text {
+                font-size: 2.4rem;
+                font-weight: bold;
+                color: white;
+              }
             }
           }
         }
