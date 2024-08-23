@@ -365,5 +365,17 @@
 }
 /* 600px - 899px Tablets Verticle */
 
+@media (max-width: 531px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
 /* 300px - 599px Phones */
+
+@media (max-width: 452px) {
+  html {
+    font-size: 0.42rem;
+  }
+}
 /*  */
