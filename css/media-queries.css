@@ -365,9 +365,22 @@
 }
 /* 600px - 899px Tablets Verticle */
 
+@media (max-width: 575px) {
+  .customer-services__info-box__1__headline__title,
+  .customer-services__info-box__2__headline__title,
+  .customer-services__info-box__3__headline__title,
+  .customer-services__info-box__4__headline__title {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 531px) {
   html {
     font-size: 0.5rem;
+  }
+
+  .our-fleet-small__selection-box__cars-list {
+    max-width: 17rem;
   }
 }
 
@@ -376,6 +389,10 @@
 @media (max-width: 452px) {
   html {
     font-size: 0.42rem;
+  }
+
+  .our-fleet-small__selection-box__cars-list {
+    max-width: 19rem;
   }
 }
 /*  */

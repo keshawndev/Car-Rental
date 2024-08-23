@@ -436,7 +436,7 @@ body {
       padding: 3rem 2rem 5.5rem 3rem; }
       .customer-services__info-box__1__headline, .customer-services__info-box__2__headline, .customer-services__info-box__3__headline, .customer-services__info-box__4__headline {
         display: flex;
-        align-content: center;
+        align-items: center;
         gap: 1.6rem;
         margin-bottom: 2rem; }
         .customer-services__info-box__1__headline__icon, .customer-services__info-box__2__headline__icon, .customer-services__info-box__3__headline__icon, .customer-services__info-box__4__headline__icon {
@@ -792,7 +792,8 @@ body {
           color: #716d6e;
           background-image: url(../../img/Home/dropdown-icon.png);
           background-repeat: no-repeat;
-          background-position: right 2rem center; }
+          background-position: right 2rem center;
+          background-color: white; }
           .locations__hover__box__flex__form__location-select__option {
             font-size: 1.8rem;
             color: #716d6e; }
