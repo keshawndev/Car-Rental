@@ -382,6 +382,10 @@
   .our-fleet-small__selection-box__cars-list {
     max-width: 17rem;
   }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-9rem, 1.3rem);
+  }
 }
 
 /* 300px - 599px Phones */
@@ -394,5 +398,42 @@
   .our-fleet-small__selection-box__cars-list {
     max-width: 19rem;
   }
+
+  .email-capture__box__content__form__email-input__button {
+    transform: translate(-9rem, 1.8rem);
+  }
+
+  .email-capture__box__content__form__email-input {
+    max-width: 40rem;
+  }
 }
-/*  */
+
+@media (max-width: 400px) {
+  html {
+    font-size: 0.4rem;
+  }
+
+  .banner__content__slider__slide__1__title {
+    text-align: center;
+  }
+
+  .email-capture__box__content__tite-box {
+    text-align: center;
+  }
+}
+
+@media (max-width: 377px) {
+  .footer nav {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 327px) {
+  .partner__box__content__img-box {
+    gap: 6rem;
+  }
+}
