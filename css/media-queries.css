@@ -432,6 +432,12 @@
   }
 }
 
+@media (max-width: 350px) {
+  .header__visibility__logo {
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 327px) {
   .partner__box__content__img-box {
     gap: 6rem;
