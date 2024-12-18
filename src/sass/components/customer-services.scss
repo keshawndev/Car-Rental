@@ -1,0 +1,68 @@
+.customer-services__top-box {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  &__title {
+    font-size: 4.6rem;
+    font-weight: 900;
+    color: #716d6e;
+    text-align: center;
+  }
+
+  &__sub-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #716d6e;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__divider {
+    border: none;
+    height: 0.5rem;
+    background-color: $home-color--14;
+    width: 10%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.customer-services__info-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+
+  &__1,
+  &__2,
+  &__3,
+  &__4 {
+    background-color: #ededed;
+    padding: 3rem 2rem 5.5rem 3rem;
+
+    &__headline {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 2rem;
+
+      &__icon {
+        font-size: 3rem;
+        background: $home-color--14;
+        padding: 1rem;
+        color: white;
+      }
+
+      &__title {
+        font-size: 3rem;
+        font-weight: 900;
+        color: #716d6e;
+      }
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      color: #716d6e;
+    }
+  }
+}

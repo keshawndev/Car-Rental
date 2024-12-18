@@ -1,0 +1,36 @@
+.banner__content__slider {
+  &__slide {
+    &__image {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 4.5rem;
+    }
+
+    &__sub-title {
+      font-size: 2.4rem;
+      color: #565656;
+      font-weight: 400;
+      line-height: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+
+    &__left-icon,
+    &__right-icon {
+      display: inline-block;
+      font-size: 5rem;
+      color: #ffffffe6;
+    }
+  }
+}
