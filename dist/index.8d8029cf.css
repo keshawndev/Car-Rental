@@ -1,0 +1,1413 @@
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.header {
+  max-width: 113rem;
+  margin: 0 auto 3rem;
+}
+
+.header__contact-bar {
+  justify-content: right;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+  padding-top: .7rem;
+  font-size: 1.7rem;
+  display: flex;
+}
+
+.header__contact-bar > * {
+  cursor: pointer;
+}
+
+.header__contact-bar > :link {
+  color: #716d6e;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header__nav {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header__nav__logo {
+  cursor: pointer;
+  max-width: 30%;
+  display: inline-block;
+}
+
+.header__nav__navbar {
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.header__nav__navbar__link--shown {
+  padding: .5rem 1.5rem;
+}
+
+.header__nav__navbar__link--shown:link, .header__nav__navbar__link--shown:visited {
+  color: #716d6e;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__nav__navbar__link--shown:hover {
+  background-color: #dbdbdb;
+  transition: all .5s;
+}
+
+.header__nav__navbar__navdropdown {
+  position: relative;
+}
+
+.header__nav__navbar__navdropdown:hover {
+  background-color: #dbdbdb;
+  transition: all .5s;
+}
+
+.header__nav__navbar__navdropdown:hover .header__nav__navbar__navdropdown__list {
+  opacity: 1;
+  max-height: auto;
+  pointer-events: auto;
+  transition: all .3s ease-in-out;
+  transform: translateY(0%);
+}
+
+.header__nav__navbar__navdropdown__btn {
+  cursor: pointer;
+  align-items: center;
+  gap: .4rem;
+  padding: .5rem 1.5rem;
+  font-size: 1.7rem;
+  display: flex;
+}
+
+.header__nav__navbar__navdropdown__btn__icon {
+  color: #7777;
+}
+
+.header__nav__navbar__navdropdown__btn__link--shown:link, .header__nav__navbar__navdropdown__btn__link--shown:visited {
+  color: #716d6e;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__nav__navbar__navdropdown__btn__link--shown:focus {
+  outline: none;
+}
+
+.header__nav__navbar__navdropdown__list {
+  opacity: 0;
+  z-index: 99;
+  pointer-events: none;
+  flex-direction: column;
+  max-height: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(1.5em);
+}
+
+.header__nav__navbar__navdropdown__list__link--hidden {
+  color: #716d6e;
+  background-color: #fff;
+  border: 0 solid #00000012;
+  border-bottom-width: 1px;
+  width: 20rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__nav__navbar__navdropdown__list__link--hidden:first-child {
+  border-top: .5rem solid #e7e7e7;
+}
+
+.header__nav__navbar__navdropdown__list__link--hidden:last-child {
+  border-bottom: .5rem solid #e7e7e7;
+}
+
+.header__nav__navbar__navdropdown__list__link--hidden:hover, .header__nav__navbar__navdropdown__list__link--hidden:focus {
+  background-color: #f5f5f5;
+  transition: all .5s;
+}
+
+.header__visibility {
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem 0;
+  display: none;
+}
+
+.header__visibility__logo {
+  max-width: 40%;
+}
+
+.header__visibility__exspand-icon {
+  color: #00000080;
+  font-size: 4rem;
+}
+
+.footer {
+  color: #716d6e;
+  background-color: #dbdbdb;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 5rem;
+  display: flex;
+}
+
+.footer nav {
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.footer nav a {
+  color: #716d6e;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer__social-icons {
+  gap: 2rem;
+  display: flex;
+}
+
+.footer__social-icons a {
+  color: #716d6e;
+}
+
+.footer__social-icons a ion-icon {
+  font-size: 2.2rem;
+}
+
+.footer__copyright-notice {
+  margin-bottom: 2rem;
+}
+
+.banner {
+  background-color: #fec417;
+  margin: 0 auto;
+  padding: 6rem 0;
+  position: relative;
+}
+
+.banner:after {
+  content: "";
+  border-top: 3.5rem solid #fec417;
+  border-left: 3.5rem solid #0000;
+  border-right: 3.5rem solid #0000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -3.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner__content {
+  justify-content: center;
+  gap: 4rem;
+  max-width: 113rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner__content__reservation__form {
+  background-color: #fff;
+  padding: 4.5rem 3.5rem;
+  box-shadow: 0 .9rem #fff, 0 -.9rem #fff, .7rem 0 1.5rem -.4rem #0000004d, -.7rem 0 1.5rem -.4rem #0000004d;
+}
+
+.banner__content__reservation__form__error-message {
+  background-color: #f8d7da;
+  border: .1rem solid #f5c6cb;
+  border-radius: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 2rem;
+  display: flex;
+}
+
+.banner__content__reservation__form__error-message__text {
+  color: #721c24;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.banner__content__reservation__form__error-message__icon {
+  color: #777;
+  --ionicon-stroke-width: 9rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner__content__reservation__form__error-message__icon:hover {
+  color: #000;
+}
+
+.banner__content__reservation__form__select-car-type {
+  color: #565656;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: .9rem 4rem .9rem 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.banner__content__reservation__form__pick-up-location {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.banner__content__reservation__form__pick-up-location__label {
+  white-space: nowrap;
+  color: #716d6e;
+  box-sizing: border-box;
+  background-color: #efe9e9;
+  align-items: center;
+  padding: 1.3rem 1.95rem 1.3rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.banner__content__reservation__form__pick-up-location__label__icon {
+  font-size: 2rem;
+}
+
+.banner__content__reservation__form__pick-up-location__select {
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 0;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+  display: block;
+  overflow: hidden;
+}
+
+.banner__content__reservation__form__drop-off-location {
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.banner__content__reservation__form__drop-off-location__label {
+  white-space: nowrap;
+  color: #716d6e;
+  box-sizing: border-box;
+  background-color: #efe9e9;
+  align-items: center;
+  padding: 1.3rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.banner__content__reservation__form__drop-off-location__label__icon {
+  font-size: 2rem;
+}
+
+.banner__content__reservation__form__drop-off-location__select {
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 0;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+  display: block;
+  overflow: hidden;
+}
+
+.banner__content__reservation__form__pick-up-date {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.banner__content__reservation__form__pick-up-date__day {
+  display: flex;
+}
+
+.banner__content__reservation__form__pick-up-date__day__label {
+  color: #716d6e;
+  white-space: nowrap;
+  background-color: #efe9e9;
+  align-items: center;
+  gap: .2rem;
+  padding: .8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.banner__content__reservation__form__pick-up-date__day__label__icon {
+  font-size: 2rem;
+}
+
+.banner__content__reservation__form__pick-up-date__day__selector {
+  color: #ffbf00;
+  cursor: pointer;
+  letter-spacing: -.1rem;
+  background-color: #fff;
+  border: .2rem solid #efe9e9;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  padding: .4rem .4rem .4rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.banner__content__reservation__form__pick-up-date__time-slot {
+  appearance: none;
+  color: #ffbf00;
+  cursor: pointer;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  padding: 1rem 4rem 1rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.banner__content__reservation__form__drop-off-date {
+  gap: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.banner__content__reservation__form__drop-off-date__day {
+  display: flex;
+}
+
+.banner__content__reservation__form__drop-off-date__day__label {
+  color: #716d6e;
+  white-space: nowrap;
+  background-color: #efe9e9;
+  align-items: center;
+  gap: .2rem;
+  padding: .8rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.banner__content__reservation__form__drop-off-date__day__label__icon {
+  font-size: 2rem;
+}
+
+.banner__content__reservation__form__drop-off-date__day__selector {
+  color: #ffbf00;
+  cursor: pointer;
+  letter-spacing: -.1rem;
+  background-color: #fff;
+  border: .2rem solid #efe9e9;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  padding: .4rem .4rem .4rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.banner__content__reservation__form__drop-off-date__time-slot {
+  appearance: none;
+  color: #ffbf00;
+  cursor: pointer;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  padding: 1rem 4rem 1rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.banner__content__reservation__form__submit {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffbf00;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: .6rem 1.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.75em;
+  transition: all .2s;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.banner__content__reservation__form__submit:hover {
+  background-color: #716d6e;
+}
+
+.banner__content__slider__slide__1__image {
+  max-width: 100%;
+}
+
+.banner__content__slider__slide__1__title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+}
+
+.banner__content__slider__slide__1__sub-title {
+  color: #565656;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.banner__content__slider__icons {
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.banner__content__slider__icons__left-icon, .banner__content__slider__icons__right-icon {
+  color: #ffffffe6;
+  font-size: 5rem;
+  display: inline-block;
+}
+
+.customer-services {
+  max-width: 113rem;
+  margin: 0 auto;
+  padding: 11.5rem 0 8rem;
+}
+
+.customer-services__top-box {
+  margin: 0 auto 4rem;
+}
+
+.customer-services__top-box__title {
+  color: #716d6e;
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: 900;
+}
+
+.customer-services__top-box__sub-title {
+  color: #716d6e;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.customer-services__top-box__divider {
+  text-align: center;
+  background-color: #fec417;
+  border: none;
+  width: 10%;
+  height: .5rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.customer-services__info-box {
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  display: grid;
+}
+
+.customer-services__info-box__1, .customer-services__info-box__2, .customer-services__info-box__3, .customer-services__info-box__4 {
+  background-color: #ededed;
+  padding: 3rem 2rem 5.5rem 3rem;
+}
+
+.customer-services__info-box__1__headline, .customer-services__info-box__2__headline, .customer-services__info-box__3__headline, .customer-services__info-box__4__headline {
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.customer-services__info-box__1__headline__icon, .customer-services__info-box__2__headline__icon, .customer-services__info-box__3__headline__icon, .customer-services__info-box__4__headline__icon {
+  color: #fff;
+  background: #fec417;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.customer-services__info-box__1__headline__title, .customer-services__info-box__2__headline__title, .customer-services__info-box__3__headline__title, .customer-services__info-box__4__headline__title {
+  color: #716d6e;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.customer-services__info-box__1__text, .customer-services__info-box__2__text, .customer-services__info-box__3__text, .customer-services__info-box__4__text {
+  color: #716d6e;
+  font-size: 1.8rem;
+}
+
+.email-capture__box {
+  background-color: #fec417;
+}
+
+.email-capture__box__content {
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 6rem 4rem;
+  display: flex;
+}
+
+.email-capture__box__content__title-box__title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.email-capture__box__content__title-box__sub-title {
+  color: #716d6e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.email-capture__box__content__form {
+  flex-grow: 1;
+}
+
+.email-capture__box__content__form__email-input {
+  border: .1rem solid #0000;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  padding: 17px 15px 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.email-capture__box__content__form__email-input__button {
+  color: #716d6e;
+  z-index: 100;
+  background-color: #fff;
+  border: .2rem solid #b8b6b6;
+  padding: .4rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: absolute;
+  transform: translate(-8rem, .9rem);
+}
+
+.email-capture__box__content__form__email-input__button:hover {
+  color: #fff;
+  background-color: #716d6e;
+}
+
+.email-capture__box__icons {
+  gap: 1.5rem;
+  margin-right: 0;
+  display: flex;
+}
+
+.email-capture__box__icons__icons-box__twitter {
+  color: #fff;
+  background-color: #36a4cf;
+  padding: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
+
+.email-capture__box__icons__icons-box__dribble {
+  color: #fff;
+  background-color: #ee636e;
+  padding: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
+
+.email-capture__box__icons__icons-box__facebook {
+  color: #fff;
+  background-color: #4b8298;
+  padding: 1rem 1.5rem;
+  font-size: 3.5rem;
+}
+
+.hidden-parts-of-the-fleet {
+  display: none;
+}
+
+.our-fleet {
+  max-width: 113rem;
+  margin: 0 auto 10rem;
+  padding: 10rem 0 0;
+}
+
+.our-fleet__title {
+  color: #716d6e;
+  justify-content: center;
+  margin-bottom: 6.5rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.1em;
+  display: flex;
+}
+
+.our-fleet__selection-box {
+  justify-content: center;
+  gap: 4.5rem;
+  display: flex;
+}
+
+.our-fleet__selection-box__cars-list {
+  list-style: none;
+}
+
+.our-fleet__selection-box__cars-list__item {
+  background-color: #e3e2e2;
+  border-top: .15rem solid #fff;
+  padding: 1.5rem 4.8rem 1.5rem 1.5rem;
+}
+
+.our-fleet__selection-box__cars-list__item:hover {
+  background-color: #d1cece;
+  transition: all .3s;
+}
+
+.our-fleet__selection-box__cars-list__item:first-child {
+  background-color: #ffe599;
+  position: relative;
+}
+
+.our-fleet__selection-box__cars-list__item:first-child:after {
+  content: "";
+  border-top: 2rem solid #ffe599;
+  border-left: 2rem solid #0000;
+  border-right: 2rem solid #0000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  transform: rotate(-90deg)translateX(-10%)translateY(110%);
+}
+
+.our-fleet__selection-box__cars-list__item__text {
+  color: #716d6e;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.our-fleet__selection-box__car-details__1, .our-fleet__selection-box__car-details__2, .our-fleet__selection-box__car-details__3, .our-fleet__selection-box__car-details__4, .our-fleet__selection-box__car-details__5, .our-fleet__selection-box__car-details__6 {
+  align-items: center;
+  gap: 4.5rem;
+  display: flex;
+}
+
+.our-fleet__selection-box__car-details__1 > img, .our-fleet__selection-box__car-details__2 > img, .our-fleet__selection-box__car-details__3 > img, .our-fleet__selection-box__car-details__4 > img, .our-fleet__selection-box__car-details__5 > img, .our-fleet__selection-box__car-details__6 > img {
+  max-width: 65%;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table, .our-fleet__selection-box__car-details__2__reserve-box__table, .our-fleet__selection-box__car-details__3__reserve-box__table, .our-fleet__selection-box__car-details__4__reserve-box__table, .our-fleet__selection-box__car-details__5__reserve-box__table, .our-fleet__selection-box__car-details__6__reserve-box__table {
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__2__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__3__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__4__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__5__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__6__reserve-box__table__tr-1 {
+  background-color: #ffe599;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table th, .our-fleet__selection-box__car-details__1__reserve-box__table td, .our-fleet__selection-box__car-details__2__reserve-box__table th, .our-fleet__selection-box__car-details__2__reserve-box__table td, .our-fleet__selection-box__car-details__3__reserve-box__table th, .our-fleet__selection-box__car-details__3__reserve-box__table td, .our-fleet__selection-box__car-details__4__reserve-box__table th, .our-fleet__selection-box__car-details__4__reserve-box__table td, .our-fleet__selection-box__car-details__5__reserve-box__table th, .our-fleet__selection-box__car-details__5__reserve-box__table td, .our-fleet__selection-box__car-details__6__reserve-box__table th, .our-fleet__selection-box__car-details__6__reserve-box__table td {
+  border: .1rem solid #ccc;
+  padding: .8rem 1.5rem;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table th > span, .our-fleet__selection-box__car-details__2__reserve-box__table th > span, .our-fleet__selection-box__car-details__3__reserve-box__table th > span, .our-fleet__selection-box__car-details__4__reserve-box__table th > span, .our-fleet__selection-box__car-details__5__reserve-box__table th > span, .our-fleet__selection-box__car-details__6__reserve-box__table th > span {
+  color: #777;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table th, .our-fleet__selection-box__car-details__2__reserve-box__table th, .our-fleet__selection-box__car-details__3__reserve-box__table th, .our-fleet__selection-box__car-details__4__reserve-box__table th, .our-fleet__selection-box__car-details__5__reserve-box__table th, .our-fleet__selection-box__car-details__6__reserve-box__table th {
+  color: #777;
+  font-size: 1.8rem;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__table td, .our-fleet__selection-box__car-details__2__reserve-box__table td, .our-fleet__selection-box__car-details__3__reserve-box__table td, .our-fleet__selection-box__car-details__4__reserve-box__table td, .our-fleet__selection-box__car-details__5__reserve-box__table td, .our-fleet__selection-box__car-details__6__reserve-box__table td {
+  color: #777;
+  font-size: 1.3rem;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn {
+  background-color: #ffbf00;
+  border: none;
+  gap: 1rem;
+  width: 100%;
+  padding: .6rem 1.5rem;
+  display: flex;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn:hover {
+  background-color: #716d6e;
+  transition: all .3s;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn__icon {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn__text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.our-fleet-small {
+  max-width: 113rem;
+  margin: 0 auto 10rem;
+  padding: 10rem 0 0;
+  display: none;
+}
+
+.our-fleet-small__title {
+  color: #716d6e;
+  justify-content: center;
+  margin-bottom: 6.5rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.1em;
+  display: flex;
+}
+
+.our-fleet-small__selection-box {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.our-fleet-small__selection-box__cars-list {
+  appearance: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-indent: 0;
+  z-index: 999;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: .2rem solid #efe9e9;
+  outline: none;
+  width: 100%;
+  max-width: 18rem;
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  position: absolute;
+  left: 30.5rem;
+  overflow: hidden;
+}
+
+.our-fleet-small__selection-box__position {
+  position: relative;
+}
+
+.our-fleet-small__selection-box__position__car-details__1, .our-fleet-small__selection-box__position__car-details__2, .our-fleet-small__selection-box__position__car-details__3, .our-fleet-small__selection-box__position__car-details__4, .our-fleet-small__selection-box__position__car-details__5, .our-fleet-small__selection-box__position__car-details__6 {
+  align-items: center;
+  gap: 4.5rem;
+  display: flex;
+}
+
+.our-fleet-small__selection-box__position__car-details__1 > img, .our-fleet-small__selection-box__position__car-details__2 > img, .our-fleet-small__selection-box__position__car-details__3 > img, .our-fleet-small__selection-box__position__car-details__4 > img, .our-fleet-small__selection-box__position__car-details__5 > img, .our-fleet-small__selection-box__position__car-details__6 > img {
+  max-width: 100%;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table {
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table__tr-1, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table__tr-1, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table__tr-1, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table__tr-1, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table__tr-1, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table__tr-1 {
+  background-color: #ffe599;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__1__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table td {
+  border: .1rem solid #ccc;
+  padding: .8rem 1.5rem;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table th > span, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table th > span, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table th > span, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table th > span, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table th > span, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table th > span {
+  color: #777;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table th, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table th {
+  color: #777;
+  font-size: 1.8rem;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__2__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__3__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__4__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__5__reserve-box__table td, .our-fleet-small__selection-box__position__car-details__6__reserve-box__table td {
+  color: #777;
+  font-size: 1.3rem;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__reservation-btn, .our-fleet-small__selection-box__position__car-details__2__reserve-box__reservation-btn, .our-fleet-small__selection-box__position__car-details__3__reserve-box__reservation-btn, .our-fleet-small__selection-box__position__car-details__4__reserve-box__reservation-btn, .our-fleet-small__selection-box__position__car-details__5__reserve-box__reservation-btn, .our-fleet-small__selection-box__position__car-details__6__reserve-box__reservation-btn {
+  background-color: #ffbf00;
+  border: none;
+  gap: 1rem;
+  width: 100%;
+  padding: .6rem 1.5rem;
+  display: flex;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__reservation-btn:hover, .our-fleet-small__selection-box__position__car-details__2__reserve-box__reservation-btn:hover, .our-fleet-small__selection-box__position__car-details__3__reserve-box__reservation-btn:hover, .our-fleet-small__selection-box__position__car-details__4__reserve-box__reservation-btn:hover, .our-fleet-small__selection-box__position__car-details__5__reserve-box__reservation-btn:hover, .our-fleet-small__selection-box__position__car-details__6__reserve-box__reservation-btn:hover {
+  background-color: #716d6e;
+  transition: all .3s;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__reservation-btn__icon, .our-fleet-small__selection-box__position__car-details__2__reserve-box__reservation-btn__icon, .our-fleet-small__selection-box__position__car-details__3__reserve-box__reservation-btn__icon, .our-fleet-small__selection-box__position__car-details__4__reserve-box__reservation-btn__icon, .our-fleet-small__selection-box__position__car-details__5__reserve-box__reservation-btn__icon, .our-fleet-small__selection-box__position__car-details__6__reserve-box__reservation-btn__icon {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.our-fleet-small__selection-box__position__car-details__1__reserve-box__reservation-btn__text, .our-fleet-small__selection-box__position__car-details__2__reserve-box__reservation-btn__text, .our-fleet-small__selection-box__position__car-details__3__reserve-box__reservation-btn__text, .our-fleet-small__selection-box__position__car-details__4__reserve-box__reservation-btn__text, .our-fleet-small__selection-box__position__car-details__5__reserve-box__reservation-btn__text, .our-fleet-small__selection-box__position__car-details__6__reserve-box__reservation-btn__text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.testimonials {
+  margin-bottom: 9rem;
+}
+
+.testimonials__box {
+  max-width: 113rem;
+  margin: 0 auto;
+}
+
+.testimonials__box__slide-1__comment__text, .testimonials__box__slide-2__comment__text, .testimonials__box__slide-3__comment__text {
+  color: #716d6e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+
+.testimonials__box__slide-1__comment__name, .testimonials__box__slide-2__comment__name, .testimonials__box__slide-3__comment__name {
+  color: #ffbf00;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.testimonials__box__slide-1__stars, .testimonials__box__slide-2__stars, .testimonials__box__slide-3__stars {
+  color: #777;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+}
+
+.testimonials__box__slide-1__stars__outside-icon, .testimonials__box__slide-2__stars__outside-icon, .testimonials__box__slide-3__stars__outside-icon {
+  font-size: 2.5rem;
+}
+
+.testimonials__box__slide-1__stars__inside-icon, .testimonials__box__slide-2__stars__inside-icon, .testimonials__box__slide-3__stars__inside-icon {
+  font-size: 3.4rem;
+  transform: translateY(-.2rem);
+}
+
+.testimonials__box__radio-buttons {
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.testimonials__box__radio-buttons input {
+  appearance: none;
+  cursor: pointer;
+  border: .5rem solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  transition: transform .1s, border-color .1s;
+  position: relative;
+}
+
+.testimonials__box__radio-buttons input:checked {
+  border-color: #716d6e;
+  transform: scale(1.2);
+}
+
+.testimonials__box__radio-buttons input:checked:after {
+  content: "";
+  background-color: #716d6e;
+  border-radius: 50%;
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.locations {
+  margin-bottom: 15rem;
+}
+
+.locations__hover {
+  justify-content: center;
+  display: flex;
+}
+
+.locations__hover__box {
+  background-color: #ffbf00;
+  display: inline-block;
+  transform: translateY(4.3rem);
+}
+
+.locations__hover__box__flex {
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: auto;
+  height: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+}
+
+.locations__hover__box__flex__title {
+  color: #fff;
+  text-wrap: nowrap;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.locations__hover__box__flex__form__location-select {
+  appearance: none;
+  color: #716d6e;
+  background-color: #fff;
+  background-image: url("dropdown-icon.e785e2c9.png");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  padding: 1.1rem 4rem 1.1rem 1rem;
+  font-size: 1.8rem;
+}
+
+.locations__hover__box__flex__form__location-select__option {
+  color: #716d6e;
+  font-size: 1.8rem;
+}
+
+.locations__map {
+  z-index: -1;
+  width: 100%;
+  position: relative;
+  height: 55rem !important;
+}
+
+.quality__box {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+  display: flex;
+}
+
+.quality__box__guaranteed {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 113rem;
+  margin-bottom: 6rem;
+  display: grid;
+}
+
+.quality__box__guaranteed__group-text {
+  padding: 0 4.5rem 3rem 0;
+}
+
+.quality__box__guaranteed__group-text__title {
+  color: #716d6e;
+  margin-bottom: 3.3rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+.quality__box__guaranteed__group-text__sub-title {
+  color: #716d6e;
+  margin-bottom: 2.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.quality__box__guaranteed__group-text__text {
+  color: #716d6e;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.quality__box__guaranteed__group-text__btn-box {
+  gap: 1.5rem;
+  display: flex;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-1 {
+  background-color: #ffbf00;
+  transition: all .3s;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-1:hover {
+  background-color: #716d6e;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-2 {
+  background-color: #716d6e;
+  transition: all .3s;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-2:hover {
+  background-color: #ffbf00;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-1, .quality__box__guaranteed__group-text__btn-box__btn-2 {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: flex;
+}
+
+.quality__box__guaranteed__group-text__btn-box__btn-1 ion-icon, .quality__box__guaranteed__group-text__btn-box__btn-2 ion-icon {
+  font-size: 2.4rem;
+}
+
+.quality__box__guaranteed__img {
+  object-fit: fill;
+  max-width: 100%;
+  height: auto;
+  white-space: none;
+}
+
+.quality__box__tour {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 113rem;
+  display: grid;
+}
+
+.quality__box__tour__group-text {
+  padding: 0 0 0 4.5rem;
+}
+
+.quality__box__tour__group-text__title {
+  color: #716d6e;
+  margin-bottom: 3.3rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+.quality__box__tour__group-text__sub-title {
+  color: #716d6e;
+  margin-bottom: 2.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.quality__box__tour__group-text__text-1 {
+  color: #716d6e;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.quality__box__tour__group-text__text-2 {
+  color: #716d6e;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.quality__box__tour__video-wrapper {
+  width: 100%;
+  max-width: 72rem;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.quality__box__tour__video-wrapper__video {
+  width: 100%;
+  height: 100%;
+  max-height: 46.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partner__box {
+  background-color: #f9f9f9;
+}
+
+.partner__box__content {
+  max-width: 113rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.partner__box__content__title-box {
+  margin: 0 auto 4rem;
+}
+
+.partner__box__content__title-box__title {
+  color: #716d6e;
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: 900;
+}
+
+.partner__box__content__title-box__divider {
+  text-align: center;
+  background-color: #fec417;
+  border: none;
+  width: 10%;
+  height: .5rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.partner__box__content__text {
+  text-align: center;
+  color: #716d6e;
+  max-width: 90%;
+  margin: 0 auto 8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.partner__box__content__img-box {
+  gap: 10rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.partner__box__content__img-box__img {
+  max-width: 60%;
+}
+
+.contact-us-center {
+  justify-content: center;
+  padding: 9rem 0 15rem;
+  display: flex;
+}
+
+.contact-us {
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 113rem;
+  display: grid;
+}
+
+.contact-us__form-box__text {
+  color: #716d6e;
+}
+
+.contact-us__form-box__text__title {
+  margin-bottom: 2rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+.contact-us__form-box__text__sub-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.contact-us__form-box__text address {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.contact-us__form-box__text address span {
+  color: #ffbf00;
+  font-style: normal;
+}
+
+.contact-us__form-box__form {
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+}
+
+.contact-us__form-box__form input {
+  border: none;
+  outline: none;
+}
+
+.contact-us__form-box__form__row-1 {
+  gap: 2rem;
+  display: flex;
+}
+
+.contact-us__form-box__form__row-1 input {
+  background-color: #dbdbdb;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.contact-us__form-box__form__row-2 {
+  gap: 2rem;
+  display: flex;
+}
+
+.contact-us__form-box__form__row-2 input {
+  background-color: #dbdbdb;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.contact-us__form-box__form__message-input {
+  resize: vertical;
+  background-color: #dbdbdb;
+  padding: 1.2rem 1.2rem 19.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.contact-us__form-box__form__submit {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffbf00;
+  width: fit-content;
+  margin: 0 auto;
+  padding: .6rem 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  box-shadow: .6rem .6rem #efe9e9;
+}
+
+.contact-us__form-box__form__submit:hover {
+  background-color: #716d6e;
+}
+
+.contact-us__centers__box__customer-center__text {
+  color: #716d6e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-us__centers__box__customer-center__box {
+  background-color: #ededed;
+  gap: 1.5rem;
+  padding: 1rem 6rem 0 2rem;
+  display: flex;
+}
+
+.contact-us__centers__box__customer-center__box img {
+  border: .2rem solid #ffbf00;
+  max-width: 30%;
+}
+
+.contact-us__centers__box__customer-center__box__text-group__title {
+  color: #716d6e;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.contact-us__centers__box__customer-center__box__text-group__contact {
+  flex-direction: column;
+  display: flex;
+}
+
+.contact-us__centers__box__customer-center__box__text-group__contact a {
+  color: #716d6e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.contact-us__centers__box__customer-center__box__text-group__contact a span {
+  color: #ffbf00;
+  font-weight: 700;
+}
+
+.contact-us__centers__box__customer-center__box__divider {
+  text-align: center;
+  background-color: #fec417;
+  border: none;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+/*# sourceMappingURL=index.8d8029cf.css.map */
