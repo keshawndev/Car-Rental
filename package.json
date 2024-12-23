@@ -2,11 +2,17 @@
   "name": "project---1---car-rental",
   "version": "1.0.0",
   "description": "First Project",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
   "author": "Keshawn Barbary",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "ionicons": "^7.4.0"
   }
 }

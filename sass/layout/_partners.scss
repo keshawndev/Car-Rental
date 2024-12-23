@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .partner__box {
   background-color: #f9f9f9;
 
@@ -20,7 +22,7 @@
       &__divider {
         border: none;
         height: 0.5rem;
-        background-color: $home-color--14;
+        background-color: variables.$home-color--14;
         width: 10%;
         text-align: center;
         display: block;
