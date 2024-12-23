@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .contact-us-center {
   padding: 9rem 0 15rem 0;
   display: flex;
@@ -146,7 +148,7 @@
         &__divider {
           border: none;
           height: 1rem;
-          background-color: $home-color--14;
+          background-color: variables.$home-color--14;
           width: 100%;
           text-align: center;
           display: block;

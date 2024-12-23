@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .header {
   max-width: 113rem;
   margin: 0 auto;
@@ -15,7 +17,7 @@
       cursor: pointer;
 
       &:link {
-        color: $home-color-5;
+        color: variables.$home-color-5;
         text-decoration: none;
         font-weight: 800;
       }
@@ -46,11 +48,11 @@
           display: inline-block;
           text-decoration: none;
           font-size: 1.7rem;
-          color: $home-color-5;
+          color: variables.$home-color-5;
           font-weight: bold;
         }
         &:hover {
-          background-color: $home-color--31;
+          background-color: variables.$home-color--31;
           transition: all 0.5s ease;
         }
       }
@@ -59,7 +61,7 @@
         position: relative;
 
         &:hover {
-          background-color: $home-color--31;
+          background-color: variables.$home-color--31;
           transition: all 0.5s ease;
         }
 
@@ -79,12 +81,16 @@
           font-size: 1.7rem;
           cursor: pointer;
 
+          &__icon {
+            color: #7777;
+          }
+
           &__link--shown {
             &:link,
             &:visited {
               display: inline-block;
               text-decoration: none;
-              color: $home-color-5;
+              color: variables.$home-color-5;
               font-size: 1.6rem;
               font-weight: bold;
             }
@@ -109,25 +115,25 @@
             width: 20rem;
             display: inline-block;
             text-decoration: none;
-            color: $home-color-5;
+            color: variables.$home-color-5;
             font-size: 1.6rem;
             padding: 1rem 2rem 1rem 2rem;
             border-style: solid;
             border-width: 0 0 1px;
-            border-color: $home-color--41;
-            background-color: $home-color--40;
+            border-color: variables.$home-color--41;
+            background-color: variables.$home-color--40;
 
             &:first-child {
-              border-top: solid 0.5rem $home-color--33;
+              border-top: solid 0.5rem variables.$home-color--33;
             }
 
             &:last-child {
-              border-bottom: solid 0.5rem $home-color--33;
+              border-bottom: solid 0.5rem variables.$home-color--33;
             }
 
             &:hover,
             &:focus {
-              background-color: $home-color--37;
+              background-color: variables.$home-color--37;
               transition: all 0.5s ease;
             }
           }

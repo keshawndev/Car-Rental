@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 .email-capture__box {
-  background-color: $home-color--14;
+  background-color: variables.$home-color--14;
 
   &__content {
     max-width: 150rem;

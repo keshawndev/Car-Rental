@@ -1,3 +1,4 @@
 course slides/
 node_modules/
 .parcel-cache/
+dist/

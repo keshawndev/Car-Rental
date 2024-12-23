@@ -1,25 +1,25 @@
 //// Abstracts
-@import "abstracts/_functions.scss";
-@import "abstracts/_mixins.scss";
-@import "abstracts/_variables.scss";
+@use "abstracts/_functions.scss";
+@use "abstracts/_mixins.scss";
+@use "abstracts/_variables.scss";
 
 // base
-@import "base/_animations.scss";
-@import "base/_base.scss";
-@import "base/_typography.scss";
-@import "base/_utilities.scss";
+@use "base/_animations.scss";
+@use "base/_base.scss";
+@use "base/_typography.scss";
+@use "base/_utilities.scss";
 
 // components
 
 // layout
-@import "layout/_header.scss";
-@import "layout/_footer.scss";
-@import "layout/_home-banner.scss";
-@import "layout/_customer-services.scss";
-@import "layout/_email-capture-box.scss";
-@import "layout/_our-fleet.scss";
-@import "layout/_testimonials.scss";
-@import "layout/_map.scss";
-@import "layout/_quality.scss";
-@import "layout/partners.scss";
-@import "layout/contact-us.scss"; // pages
+@use "layout/_header.scss";
+@use "layout/_footer.scss";
+@use "layout/_home-banner.scss";
+@use "layout/_customer-services.scss";
+@use "layout/_email-capture-box.scss";
+@use "layout/_our-fleet.scss";
+@use "layout/_testimonials.scss";
+@use "layout/_map.scss";
+@use "layout/_quality.scss";
+@use "layout/partners.scss";
+@use "layout/contact-us.scss"; // pages
