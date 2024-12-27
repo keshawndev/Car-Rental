@@ -1,10 +1,27 @@
-let map = L.map("map").setView([51.505, -0.09], 13);
+import MapModel from "./../models/mapModel.js";
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 18,
-  minZoom: 0,
-  attribution:
-    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
+class MapView {
+  constructor() {
+    this.map = null;
+  }
 
-var marker = L.marker([51.5, -0.09]).addTo(map);
+  mapRender(location = MapModel.location, zoom = MapModel.zoom) {
+    this.map = L.map(MapModel.mapId, {
+      center: location,
+      zoom: zoom,
+    });
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      minZoom: 0,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(this.map);
+  }
+
+  addHandlerRender(handler) {
+    window.addEventListener("load", handler);
+  }
+}
+
+export default new MapView();
