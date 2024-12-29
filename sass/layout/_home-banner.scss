@@ -44,7 +44,6 @@
           border: 0.1rem solid #f5c6cb;
           border-radius: 0.5rem;
           margin-bottom: 1.5rem;
-          // display: none;
 
           &__text {
             color: variables.$home-color-1;
@@ -333,4 +332,8 @@
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }
