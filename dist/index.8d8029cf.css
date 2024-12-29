@@ -1010,11 +1010,14 @@ body {
 }
 
 .locations__hover {
+  pointer-events: none;
   justify-content: center;
   display: flex;
 }
 
 .locations__hover__box {
+  pointer-events: auto;
+  z-index: 2;
   background-color: #ffbf00;
   display: inline-block;
   transform: translateY(4.3rem);
@@ -1056,7 +1059,7 @@ body {
 }
 
 .locations__map {
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 55rem;
   position: relative;

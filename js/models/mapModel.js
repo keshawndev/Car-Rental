@@ -35,8 +35,14 @@ class MapModel {
     };
   }
 
-  getLocationData() {
-    return this.locationData;
+  setView(locationName, map) {
+    const location = Object.values(this.locationData).find(
+      (loc) => loc.name === locationName
+    );
+    if (location) {
+      map.setView(location.coordinates, 13);
+    }
+    L.marker(location.coordinates).addTo(map);
   }
 }
 

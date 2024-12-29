@@ -1,1 +1,2 @@
-import MapView from "./mapView"; // Changed from import * as mapView
+import MapView from "./mapView";
+import formView from "./formView"; // C
