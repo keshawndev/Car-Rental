@@ -824,6 +824,7 @@ body {
 }
 
 .our-fleet__selection-box__cars-list__item {
+  cursor: pointer;
   background-color: #e3e2e2;
   border-top: .15rem solid #fff;
   padding: 1.5rem 4.8rem 1.5rem 1.5rem;
@@ -834,12 +835,12 @@ body {
   transition: all .3s;
 }
 
-.our-fleet__selection-box__cars-list__item:first-child {
+.our-fleet__selection-box__cars-list__item.active {
   background-color: #ffe599;
   position: relative;
 }
 
-.our-fleet__selection-box__cars-list__item:first-child:after {
+.our-fleet__selection-box__cars-list__item.active:after {
   content: "";
   border-top: 2rem solid #ffe599;
   border-left: 2rem solid #0000;
@@ -848,7 +849,7 @@ body {
   height: 0;
   position: absolute;
   right: 0;
-  transform: rotate(-90deg)translateX(-10%)translateY(110%);
+  transform: rotate(-90deg)translateX(65%)translateY(150%);
 }
 
 .our-fleet__selection-box__cars-list__item__text {
@@ -857,47 +858,47 @@ body {
   font-weight: 600;
 }
 
-.our-fleet__selection-box__car-details__1, .our-fleet__selection-box__car-details__2, .our-fleet__selection-box__car-details__3, .our-fleet__selection-box__car-details__4, .our-fleet__selection-box__car-details__5, .our-fleet__selection-box__car-details__6 {
+.our-fleet__selection-box__car-details {
   align-items: center;
   gap: 4.5rem;
   display: flex;
 }
 
-.our-fleet__selection-box__car-details__1 > img, .our-fleet__selection-box__car-details__2 > img, .our-fleet__selection-box__car-details__3 > img, .our-fleet__selection-box__car-details__4 > img, .our-fleet__selection-box__car-details__5 > img, .our-fleet__selection-box__car-details__6 > img {
+.our-fleet__selection-box__car-details__img {
   max-width: 65%;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table, .our-fleet__selection-box__car-details__2__reserve-box__table, .our-fleet__selection-box__car-details__3__reserve-box__table, .our-fleet__selection-box__car-details__4__reserve-box__table, .our-fleet__selection-box__car-details__5__reserve-box__table, .our-fleet__selection-box__car-details__6__reserve-box__table {
+.our-fleet__selection-box__car-details__reserve-box__table {
   border-collapse: collapse;
   margin-bottom: 1.5rem;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__2__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__3__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__4__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__5__reserve-box__table__tr-1, .our-fleet__selection-box__car-details__6__reserve-box__table__tr-1 {
+.our-fleet__selection-box__car-details__reserve-box__table__tr-1 {
   background-color: #ffe599;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table th, .our-fleet__selection-box__car-details__1__reserve-box__table td, .our-fleet__selection-box__car-details__2__reserve-box__table th, .our-fleet__selection-box__car-details__2__reserve-box__table td, .our-fleet__selection-box__car-details__3__reserve-box__table th, .our-fleet__selection-box__car-details__3__reserve-box__table td, .our-fleet__selection-box__car-details__4__reserve-box__table th, .our-fleet__selection-box__car-details__4__reserve-box__table td, .our-fleet__selection-box__car-details__5__reserve-box__table th, .our-fleet__selection-box__car-details__5__reserve-box__table td, .our-fleet__selection-box__car-details__6__reserve-box__table th, .our-fleet__selection-box__car-details__6__reserve-box__table td {
+.our-fleet__selection-box__car-details__reserve-box__table th, .our-fleet__selection-box__car-details__reserve-box__table td {
   border: .1rem solid #ccc;
   padding: .8rem 1.5rem;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table th > span, .our-fleet__selection-box__car-details__2__reserve-box__table th > span, .our-fleet__selection-box__car-details__3__reserve-box__table th > span, .our-fleet__selection-box__car-details__4__reserve-box__table th > span, .our-fleet__selection-box__car-details__5__reserve-box__table th > span, .our-fleet__selection-box__car-details__6__reserve-box__table th > span {
+.our-fleet__selection-box__car-details__reserve-box__table th > span {
   color: #777;
   font-size: 2.4rem;
   font-weight: 900;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table th, .our-fleet__selection-box__car-details__2__reserve-box__table th, .our-fleet__selection-box__car-details__3__reserve-box__table th, .our-fleet__selection-box__car-details__4__reserve-box__table th, .our-fleet__selection-box__car-details__5__reserve-box__table th, .our-fleet__selection-box__car-details__6__reserve-box__table th {
+.our-fleet__selection-box__car-details__reserve-box__table th {
   color: #777;
   font-size: 1.8rem;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__table td, .our-fleet__selection-box__car-details__2__reserve-box__table td, .our-fleet__selection-box__car-details__3__reserve-box__table td, .our-fleet__selection-box__car-details__4__reserve-box__table td, .our-fleet__selection-box__car-details__5__reserve-box__table td, .our-fleet__selection-box__car-details__6__reserve-box__table td {
+.our-fleet__selection-box__car-details__reserve-box__table td {
   color: #777;
   font-size: 1.3rem;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn {
+.our-fleet__selection-box__car-details__reserve-box__reservation-btn {
   background-color: #ffbf00;
   border: none;
   gap: 1rem;
@@ -907,17 +908,17 @@ body {
   box-shadow: .6rem .6rem #efe9e9;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn:hover, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn:hover {
+.our-fleet__selection-box__car-details__reserve-box__reservation-btn:hover {
   background-color: #716d6e;
   transition: all .3s;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn__icon, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn__icon {
+.our-fleet__selection-box__car-details__reserve-box__reservation-btn__icon {
   color: #fff;
   font-size: 2.4rem;
 }
 
-.our-fleet__selection-box__car-details__1__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__2__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__3__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__4__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__5__reserve-box__reservation-btn__text, .our-fleet__selection-box__car-details__6__reserve-box__reservation-btn__text {
+.our-fleet__selection-box__car-details__reserve-box__reservation-btn__text {
   color: #fff;
   font-size: 2.4rem;
   font-weight: bold;
