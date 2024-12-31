@@ -14,6 +14,7 @@ class FormView {
   render() {
     const markup = `
       <form action="#" class="banner__content__reservation__form" novalidate>
+        ${this._generateSuccessMessageMarkup()}
         ${this._generateErrorMessageMarkup()}
         ${this._generateCarTypeSelectMarkup()}
         ${this._generatePickUpLocationMarkup()}
@@ -27,6 +28,16 @@ class FormView {
     this.parentElement.innerHTML = markup;
     // Check form validity
     this._checkFormValidity();
+  }
+
+  // Method to generate markup for the error message
+  _generateSuccessMessageMarkup() {
+    return `
+        <div class="banner__content__reservation__form__success-message hidden">
+          <p class="banner__content__reservation__form__success-message__text">Reservation Submitted! :)</p>
+          <ion-icon name="checkmark-outline" class="banner__content__reservation__form__success-message__icon"></ion-icon>
+        </div>
+      `;
   }
 
   // Method to generate markup for the error message
@@ -99,7 +110,7 @@ class FormView {
           <input type="date" name="pick-up-date" class="banner__content__reservation__form__pick-up-date__day__selector" required />
         </div>
         <select name="pick-up-time-slot" class="banner__content__reservation__form__pick-up-date__time-slot" required>
-        <option value="" disabled selected>Time Slot</option>
+        <option value="" disabled selected>Time</option>
           ${formModel.timeSlots
             .map(
               (timeSlot) => `<option value="${timeSlot}">${timeSlot}</option>`
@@ -122,7 +133,7 @@ class FormView {
           <input type="date" name="drop-off-date" class="banner__content__reservation__form__drop-off-date__day__selector" required />
         </div>
         <select name="drop-off-time-slot" class="banner__content__reservation__form__drop-off-date__time-slot" required>
-        <option value="" disabled selected>Time Slot</option>
+        <option value="" disabled selected>Time</option>
           ${formModel.timeSlots
             .map(
               (timeSlot) => `<option value="${timeSlot}">${timeSlot}</option>`
@@ -136,7 +147,7 @@ class FormView {
   // Method to generate markup for the submit button
   _generateSubmitButtonMarkup() {
     return `
-      <input type="submit" value="CONTINUE CAR RESERVATION" class="banner__content__reservation__form__submit" />
+      <input type="submit" value="SUBMIT CAR RESERVATION" class="banner__content__reservation__form__submit" />
     `;
   }
 
@@ -146,14 +157,20 @@ class FormView {
     this.errorMessage = document.querySelector(
       ".banner__content__reservation__form__error-message"
     );
+    this.successMessage = document.querySelector(
+      ".banner__content__reservation__form__success-message"
+    );
 
     this.form.addEventListener("submit", (e) => {
       if (!this.form.checkValidity()) {
         e.preventDefault();
         this.errorMessage.classList.remove("hidden");
+        this.successMessage.classList.add("hidden");
       } else {
         e.preventDefault();
         this.errorMessage.classList.add("hidden");
+        this.successMessage.classList.remove("hidden");
+        this.form.reset();
       }
     });
   }

@@ -124,20 +124,11 @@
   }
 
   .banner__content {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     max-width: 80%;
     gap: 6rem;
-  }
-
-  .banner__content__slider__slide__1 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .banner__content__slider__slide__1__image {
-    max-width: 80%;
   }
 
   .banner__content__slider {
