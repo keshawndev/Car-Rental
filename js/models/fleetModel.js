@@ -1,16 +1,14 @@
+import vehicle1 from "../../img/Home/vehicle1.jpg";
+import vehicle2 from "../../img/Home/vehicle2.jpg";
+import vehicle3 from "../../img/Home/vehicle3.jpg";
+import vehicle4 from "../../img/Home/vehicle4.jpg";
+import vehicle5 from "../../img/Home/vehicle5.jpg";
+import vehicle6 from "../../img/Home/vehicle6.jpg";
+
 class FleetModel {
   constructor() {
-    this.carModels = [
-      "VW Golf VII",
-      "Audi A1 S-LINE",
-      "Toyota Camry",
-      "BMW 320 ModernLine",
-      "Mercedes-Benz GLK",
-      "VW Passat CC",
-    ];
-
     this.fleet = {
-      "VW Golf VII": {
+      car1: {
         price: 37.4,
         make: "Volkswagen",
         model: "VW Golf VII",
@@ -20,9 +18,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle1.jpg",
+        image: vehicle1,
       },
-      "Audi A1 S-LINE": {
+      car2: {
         price: 47.5,
         make: "Audi",
         model: "A1 S-LINE",
@@ -32,9 +30,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle2.jpg",
+        image: vehicle2,
       },
-      "Toyota Camry": {
+      car3: {
         price: 50.4,
         make: "Toyota",
         model: "Camry",
@@ -44,9 +42,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle3.jpg",
+        image: vehicle3,
       },
-      "BMW 320 ModernLine": {
+      car4: {
         price: 37.4,
         make: "BMW",
         model: "320 ModernLinw",
@@ -56,9 +54,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle4.jpg",
+        image: vehicle4,
       },
-      "Mercedes-Benz GLK": {
+      car5: {
         price: 80.4,
         make: "Mercedes-Benz",
         model: "GLK",
@@ -68,9 +66,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle5.jpg",
+        image: vehicle5,
       },
-      "VW Passat CC": {
+      car6: {
         price: 75.4,
         make: "Volkswagen",
         model: "VW Passat CC",
@@ -80,61 +78,9 @@ class FleetModel {
         transmission: "Automatic",
         airConditioning: "Yes",
         minimumAge: 25,
-        image: "img/Home/vehicle6.jpg",
+        image: vehicle6,
       },
     };
-  }
-
-  getCarModels() {
-    return this.carModels;
-  }
-
-  getFleet() {
-    return this.fleet;
-  }
-
-  getCarModelDetails(carModel) {
-    return this.fleet[carModel];
-  }
-
-  getCarModelImage(carModel) {
-    return this.fleet[carModel].image;
-  }
-
-  getCarModelPrice(carModel) {
-    return this.fleet[carModel].price;
-  }
-
-  getCarModelMake(carModel) {
-    return this.fleet[carModel].make;
-  }
-
-  getCarModelModel(carModel) {
-    return this.fleet[carModel].model;
-  }
-
-  getCarModelDoors(carModel) {
-    return this.fleet[carModel].doors;
-  }
-
-  getCarModelSeats(carModel) {
-    return this.fleet[carModel].seats;
-  }
-
-  getCarModelLugguage(carModel) {
-    return this.fleet[carModel].lugguage;
-  }
-
-  getCarModelTransmission(carModel) {
-    return this.fleet[carModel].transmission;
-  }
-
-  getCarModelAirConditioning(carModel) {
-    return this.fleet[carModel].airConditioning;
-  }
-
-  getCarModelMinimumAge(carModel) {
-    return this.fleet[carModel].minimumAge;
   }
 }
 
