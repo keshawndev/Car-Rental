@@ -6,6 +6,7 @@ import vehicle5 from "../../img/Home/vehicle5.jpg";
 import vehicle6 from "../../img/Home/vehicle6.jpg";
 
 class FleetModel {
+  //
   constructor() {
     this.fleet = {
       car1: {
