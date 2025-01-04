@@ -35,125 +35,125 @@ class FleetView {
         </ul>
       
     
-      <div class="our-fleet__selection-box__car-details">
+    
             <img
               src=${selectedCar.image}
               alt="car"
-              class="our-fleet__selection-box__car-details__img"
+              class="our-fleet__selection-box__img"
             />
 
-            <div class="our-fleet__selection-box__car-details__reserve-box">
+            <div class="our-fleet__selection-box__reserve-box">
               <table
-                class="our-fleet__selection-box__car-details__reserve-box__table"
+                class="our-fleet__selection-box__reserve-box__table"
               >
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-1"
+                  class="our-fleet__selection-box__reserve-box__table__tr-1"
                 >
                   <th
                     colspan="2"
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-1__rent-th"
+                    class="our-fleet__selection-box__reserve-box__table__tr-1__rent-th"
                   >
                     <span
-                      class="our-fleet__selection-box__car-details__reserve-box__table__tr-1__rent-th__price"
+                      class="our-fleet__selection-box__reserve-box__table__tr-1__rent-th__price"
                       >${selectedCar.price}</span
                     >
                     rent per day
                   </th>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Model
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                   ${selectedCar.make}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Doors
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                   ${selectedCar.doors}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Seats
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                   ${selectedCar.seats}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Luggage
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                   ${selectedCar.lugguage}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Transmission
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                      ${selectedCar.transmission}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Air conditioning
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                      ${selectedCar.airConditioning}
                   </td>
                 </tr>
                 <tr
-                  class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7"
+                  class="our-fleet__selection-box__reserve-box__table__tr-2-7"
                 >
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                     Minimum age
                   </td>
                   <td
-                    class="our-fleet__selection-box__car-details__reserve-box__table__tr-2-7__td"
+                    class="our-fleet__selection-box__reserve-box__table__tr-2-7__td"
                   >
                      ${selectedCar.minimumAge} years
                   </td>
@@ -161,21 +161,21 @@ class FleetView {
               </table>
 
               <button
-                class="our-fleet__selection-box__car-details__reserve-box__reservation-btn"
+                class="our-fleet__selection-box__reserve-box__reservation-btn"
               >
                 <ion-icon
                   name="calendar"
-                  class="our-fleet__selection-box__car-details__reserve-box__reservation-btn__icon"
+                  class="our-fleet__selection-box__reserve-box__reservation-btn__icon"
                 ></ion-icon>
                 <p
-                  class="our-fleet__selection-box__car-details__reserve-box__reservation-btn__text"
+                  class="our-fleet__selection-box__reserve-box__reservation-btn__text"
                 >
                   RESERVE NOW
                 </p>
               </button>
             </div>
           </div>
-        </div>
+     
    `;
     this.parentElement.insertAdjacentHTML("beforeend", markup);
   }

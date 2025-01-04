@@ -814,12 +814,14 @@ body {
 }
 
 .our-fleet__selection-box {
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 4.5rem;
   display: flex;
 }
 
 .our-fleet__selection-box__cars-list {
+  max-width: fit-content;
   list-style: none;
 }
 
@@ -858,47 +860,41 @@ body {
   font-weight: 600;
 }
 
-.our-fleet__selection-box__car-details {
-  align-items: center;
-  gap: 4.5rem;
-  display: flex;
+.our-fleet__selection-box__img {
+  max-width: auto;
 }
 
-.our-fleet__selection-box__car-details__img {
-  max-width: 65%;
-}
-
-.our-fleet__selection-box__car-details__reserve-box__table {
+.our-fleet__selection-box__reserve-box__table {
   border-collapse: collapse;
   margin-bottom: 1.5rem;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__table__tr-1 {
+.our-fleet__selection-box__reserve-box__table__tr-1 {
   background-color: #ffe599;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__table th, .our-fleet__selection-box__car-details__reserve-box__table td {
+.our-fleet__selection-box__reserve-box__table th, .our-fleet__selection-box__reserve-box__table td {
   border: .1rem solid #ccc;
   padding: .8rem 1.5rem;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__table th > span {
+.our-fleet__selection-box__reserve-box__table th > span {
   color: #777;
   font-size: 2.4rem;
   font-weight: 900;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__table th {
+.our-fleet__selection-box__reserve-box__table th {
   color: #777;
   font-size: 1.8rem;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__table td {
+.our-fleet__selection-box__reserve-box__table td {
   color: #777;
   font-size: 1.3rem;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__reservation-btn {
+.our-fleet__selection-box__reserve-box__reservation-btn {
   background-color: #ffbf00;
   border: none;
   gap: 1rem;
@@ -908,17 +904,17 @@ body {
   box-shadow: .6rem .6rem #efe9e9;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__reservation-btn:hover {
+.our-fleet__selection-box__reserve-box__reservation-btn:hover {
   background-color: #716d6e;
   transition: all .3s;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__reservation-btn__icon {
+.our-fleet__selection-box__reserve-box__reservation-btn__icon {
   color: #fff;
   font-size: 2.4rem;
 }
 
-.our-fleet__selection-box__car-details__reserve-box__reservation-btn__text {
+.our-fleet__selection-box__reserve-box__reservation-btn__text {
   color: #fff;
   font-size: 2.4rem;
   font-weight: bold;
