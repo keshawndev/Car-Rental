@@ -6,13 +6,12 @@ import vehicle5 from "../../img/Home/vehicle5.jpg";
 import vehicle6 from "../../img/Home/vehicle6.jpg";
 
 class FleetModel {
-  //
   constructor() {
     this.fleet = {
       car1: {
         price: 37.4,
         make: "Volkswagen",
-        model: "VW Golf VII",
+        name: "VW Golf VII",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -24,7 +23,7 @@ class FleetModel {
       car2: {
         price: 47.5,
         make: "Audi",
-        model: "A1 S-LINE",
+        name: "Audi A1 S-LINE",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -36,7 +35,7 @@ class FleetModel {
       car3: {
         price: 50.4,
         make: "Toyota",
-        model: "Camry",
+        name: "Toyota Camry",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -48,7 +47,7 @@ class FleetModel {
       car4: {
         price: 37.4,
         make: "BMW",
-        model: "320 ModernLinw",
+        name: "BMW 320 ModernLinw",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -59,8 +58,8 @@ class FleetModel {
       },
       car5: {
         price: 80.4,
-        make: "Mercedes-Benz",
-        model: "GLK",
+        make: "Mercedes",
+        name: "Mercedes-Benz GLK",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -72,7 +71,7 @@ class FleetModel {
       car6: {
         price: 75.4,
         make: "Volkswagen",
-        model: "VW Passat CC",
+        name: "VW Passat CC",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -82,6 +81,10 @@ class FleetModel {
         image: vehicle6,
       },
     };
+  }
+
+  getFleetCarNames() {
+    console.log(this.fleet.map((car) => this.fleet[car].name));
   }
 }
 
