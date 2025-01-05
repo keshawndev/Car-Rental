@@ -9,7 +9,7 @@ class FleetModel {
   constructor() {
     this.fleet = {
       car1: {
-        price: 37.4,
+        price: "37.40",
         make: "Volkswagen",
         name: "VW Golf VII",
         doors: 4,
@@ -21,7 +21,7 @@ class FleetModel {
         image: vehicle1,
       },
       car2: {
-        price: 47.5,
+        price: "47.50",
         make: "Audi",
         name: "Audi A1 S-LINE",
         doors: 4,
@@ -33,7 +33,7 @@ class FleetModel {
         image: vehicle2,
       },
       car3: {
-        price: 50.4,
+        price: "50.40",
         make: "Toyota",
         name: "Toyota Camry",
         doors: 4,
@@ -45,9 +45,9 @@ class FleetModel {
         image: vehicle3,
       },
       car4: {
-        price: 37.4,
+        price: "37.40",
         make: "BMW",
-        name: "BMW 320 ModernLinw",
+        name: "BMW 320 ModernLine",
         doors: 4,
         seats: 5,
         lugguage: "2 Suitcases, 2 Bags",
@@ -57,7 +57,7 @@ class FleetModel {
         image: vehicle4,
       },
       car5: {
-        price: 80.4,
+        price: "80.40",
         make: "Mercedes",
         name: "Mercedes-Benz GLK",
         doors: 4,
@@ -69,7 +69,7 @@ class FleetModel {
         image: vehicle5,
       },
       car6: {
-        price: 75.4,
+        price: "75.40",
         make: "Volkswagen",
         name: "VW Passat CC",
         doors: 4,

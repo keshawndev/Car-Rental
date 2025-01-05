@@ -19,6 +19,10 @@
 }
 
 @media (max-width: 1174px) {
+  .our-fleet__selection-box__img {
+    width: 45%;
+  }
+
   html {
     font-size: 0.5rem;
   }
@@ -163,97 +167,6 @@
     margin-bottom: 5rem;
   }
 
-  .our-fleet {
-    display: none;
-  }
-
-  .our-fleet-small {
-    padding: 0;
-  }
-
-  .our-fleet-small__title {
-    text-align: center;
-  }
-
-  .our-fleet-small__selection-box__cars-list {
-    left: 11rem;
-    transform: translateY(-4rem);
-    max-width: 15rem;
-  }
-
-  .our-fleet-small {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1,
-  .our-fleet-small__selection-box__position__car-details__2,
-  .our-fleet-small__selection-box__position__car-details__3,
-  .our-fleet-small__selection-box__position__car-details__4,
-  .our-fleet-small__selection-box__position__car-details__5,
-  .our-fleet-small__selection-box__position__car-details__6 {
-    flex-direction: column;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1 > img,
-  .our-fleet-small__selection-box__position__car-details__2 > img,
-  .our-fleet-small__selection-box__position__car-details__3 > img,
-  .our-fleet-small__selection-box__position__car-details__4 > img,
-  .our-fleet-small__selection-box__position__car-details__5 > img,
-  .our-fleet-small__selection-box__position__car-details__6 > img {
-    max-width: 80%;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1__reserve-box__table,
-  .our-fleet-small__selection-box__position__car-details__2__reserve-box__table,
-  .our-fleet-small__selection-box__position__car-details__3__reserve-box__table,
-  .our-fleet-small__selection-box__position__car-details__4__reserve-box__table,
-  .our-fleet-small__selection-box__position__car-details__5__reserve-box__table,
-  .our-fleet-small__selection-box__position__car-details__6__reserve-box__table {
-    width: 40rem;
-    text-align: center;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1__reserve-box__table
-    th,
-  .our-fleet-small__selection-box__position__car-details__2__reserve-box__table
-    th,
-  .our-fleet-small__selection-box__position__car-details__3__reserve-box__table
-    th,
-  .our-fleet-small__selection-box__position__car-details__4__reserve-box__table
-    th,
-  .our-fleet-small__selection-box__position__car-details__5__reserve-box__table
-    th,
-  .our-fleet-small__selection-box__position__car-details__6__reserve-box__table
-    th {
-    font-size: 2rem;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1__reserve-box__table
-    td,
-  .our-fleet-small__selection-box__position__car-details__2__reserve-box__table
-    td,
-  .our-fleet-small__selection-box__position__car-details__3__reserve-box__table
-    td,
-  .our-fleet-small__selection-box__position__car-details__4__reserve-box__table
-    td,
-  .our-fleet-small__selection-box__position__car-details__5__reserve-box__table
-    td,
-  .our-fleet-small__selection-box__position__car-details__6__reserve-box__table
-    td {
-    font-size: 1.5rem;
-  }
-
-  .our-fleet-small__selection-box__position__car-details__1__reserve-box__reservation-btn,
-  .our-fleet-small__selection-box__position__car-details__2__reserve-box__reservation-btn,
-  .our-fleet-small__selection-box__position__car-details__3__reserve-box__reservation-btn,
-  .our-fleet-small__selection-box__position__car-details__4__reserve-box__reservation-btn,
-  .our-fleet-small__selection-box__position__car-details__5__reserve-box__reservation-btn,
-  .our-fleet-small__selection-box__position__car-details__6__reserve-box__reservation-btn {
-    justify-content: center;
-  }
-
   .testimonials__box {
     max-width: 80%;
   }
@@ -356,6 +269,38 @@
 }
 /* 600px - 899px Tablets Verticle */
 
+@media (max-width: 601px) {
+  .our-fleet {
+    padding: 0 5rem;
+  }
+  .our-fleet__title {
+    text-align: center;
+  }
+
+  .our-fleet__selection-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .our-fleet__selection-box__reserve-box__table {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-fleet__selection-box__reserve-box {
+    width: 80%;
+  }
+
+  .our-fleet__selection-box__img {
+    width: 80%;
+  }
+
+  .our-fleet__selection-box__reserve-box__reservation-btn {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 575px) {
   .customer-services__info-box__1__headline__title,
   .customer-services__info-box__2__headline__title,
@@ -370,10 +315,6 @@
     font-size: 0.5rem;
   }
 
-  .our-fleet-small__selection-box__cars-list {
-    max-width: 17rem;
-  }
-
   .email-capture__box__content__form__email-input__button {
     transform: translate(-9rem, 1.3rem);
   }
@@ -384,10 +325,6 @@
 @media (max-width: 452px) {
   html {
     font-size: 0.42rem;
-  }
-
-  .our-fleet-small__selection-box__cars-list {
-    max-width: 19rem;
   }
 
   .email-capture__box__content__form__email-input__button {

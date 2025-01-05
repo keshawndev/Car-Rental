@@ -1,8 +1,7 @@
 import fleetView from "../views/fleetView.js";
 
 const controlFleet = function () {
-  fleetView.renderCarSelection();
-  fleetView.addCarSelectionHandler();
+  fleetView.init();
 };
 
 const init = function () {
