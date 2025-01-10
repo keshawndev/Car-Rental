@@ -1,12 +1,32 @@
 .testimonials {
   margin-bottom: 6rem;
+
   &__box {
     max-width: 113rem;
     margin: 0 auto;
+    position: relative;
 
-    &__slide-1,
-    &__slide-2,
-    &__slide-3 {
+    &__slide {
+      display: none; // Hide all slides by default
+      &.hidden {
+        display: none;
+      }
+      &.current {
+        display: block; // Show only the current slide
+      }
+      &.slide-in-left {
+        animation: slideInFromLeft 0.5s forwards;
+      }
+      &.slide-in-right {
+        animation: slideInFromRight 0.5s forwards;
+      }
+      &.slide-out-left {
+        animation: slideOutToLeft 0.5s forwards;
+      }
+      &.slide-out-right {
+        animation: slideOutToRight 0.5s forwards;
+      }
+
       &__comment {
         &__text {
           font-size: 2.4rem;
@@ -42,6 +62,7 @@
         }
       }
     }
+
     &__radio-buttons {
       display: flex;
       justify-content: center;
@@ -77,5 +98,49 @@
         }
       }
     }
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }

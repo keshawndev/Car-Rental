@@ -9,4 +9,4 @@ const init = function () {
   controlTestimonialSlider();
 };
 
-// init();
+init();
