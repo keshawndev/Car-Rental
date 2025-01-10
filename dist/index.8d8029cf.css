@@ -929,7 +929,12 @@ body {
   position: relative;
 }
 
-.testimonials__box__slide, .testimonials__box__slide.hidden {
+.testimonials__box__slide {
+  height: 27rem;
+  display: none;
+}
+
+.testimonials__box__slide.hidden {
   display: none;
 }
 

@@ -27,7 +27,6 @@ class TestimonialSliderView {
     `;
     this.parentElement.innerHTML = markup;
     this.addEventListeners();
-    this.setFixedHeight();
   }
 
   _generateSlideMarkup(slide, isCurrent = false) {
@@ -106,22 +105,6 @@ class TestimonialSliderView {
 
     radioButtons.forEach((button, i) => {
       button.checked = i === index;
-    });
-  }
-
-  setFixedHeight() {
-    const slides = document.querySelectorAll(".testimonials__box__slide");
-    let maxHeight = 0;
-
-    slides.forEach((slide) => {
-      const slideHeight = slide.offsetHeight;
-      if (slideHeight > maxHeight) {
-        maxHeight = slideHeight + 15;
-      }
-    });
-
-    slides.forEach((slide) => {
-      slide.style.height = `${maxHeight}px`;
     });
   }
 }
