@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  background-color: #fff;
   max-width: 113rem;
   margin: 0 auto 3rem;
 }
@@ -25,8 +26,7 @@ body {
 .header__contact-bar {
   justify-content: right;
   gap: 1.2rem;
-  margin-bottom: 1rem;
-  padding-top: .7rem;
+  padding: 1rem 3rem 0;
   font-size: 1.7rem;
   display: flex;
 }
@@ -42,9 +42,8 @@ body {
 }
 
 .header__nav {
-  background-color: #fff;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   transition: all .3s;
   display: flex;
 }
@@ -176,7 +175,7 @@ body {
   z-index: 1000;
   width: 100%;
   max-width: 100%;
-  padding: .5rem 1rem;
+  padding: 1rem 35rem 3rem;
   position: fixed;
   top: 0;
   box-shadow: 0 2px 5px #0000001a;
