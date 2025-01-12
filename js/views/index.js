@@ -3,4 +3,3 @@ import formView from "./formView";
 import headerSliderView from "./headerSliderView";
 import fleetView from "./fleetView";
 import testimonialSliderView from "./testimonialSliderView";
-import navBarView from "./navBarView";

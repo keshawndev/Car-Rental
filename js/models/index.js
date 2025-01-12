@@ -3,4 +3,3 @@ import * as formModel from "./formModel";
 import * as headerSliderModel from "./headerSliderModel";
 import * as fleetModel from "./fleetModel";
 import * as testimonialSliderModel from "./testimonialSliderModel";
-import * as navBarModel from "./navBarModel";
