@@ -4,11 +4,9 @@
   &__box {
     max-width: 113rem;
     margin: 0 auto;
-    position: relative;
 
     &__slide {
       display: none; // Hide all slides by default
-      height: 30rem;
       &.hidden {
         display: none;
       }
@@ -87,8 +85,6 @@
 
         &:checked::after {
           background-color: #716d6e;
-          content: "";
-          display: block;
           width: 0.8rem;
           height: 0.8rem;
           position: absolute;

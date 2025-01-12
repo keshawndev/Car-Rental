@@ -9,22 +9,24 @@ class TestimonialSliderView {
 
   render() {
     const markup = `
-      <div class="testimonials__box">
-        ${Object.values(this.slides)
-          .map((slide, index) => this._generateSlideMarkup(slide, index === 0))
+    <div class="testimonials__box">
+      ${Object.values(this.slides)
+        .map((slide, index) => this._generateSlideMarkup(slide, index === 0))
+        .join("")}
+      <div class="testimonials__box__radio-buttons">
+        ${Object.keys(this.slides)
+          .map(
+            (slide, index) => `
+          <input type="radio" id="radio-${index}" name="testimonials__box__radio-buttons__input" ${
+              index === 0 ? "checked" : ""
+            } /> 
+          <label for="radio-${index}"></label>
+        `
+          )
           .join("")}
-        <div class="testimonials__box__radio-buttons">
-          ${Object.keys(this.slides)
-            .map(
-              (slide, index) => `
-            <input type="radio" id="radio-${index}" name="testimonials__box__radio-buttons__input" />
-            <label for="radio-${index}"></label>
-          `
-            )
-            .join("")}
-        </div>
       </div>
-    `;
+    </div>
+  `;
     this.parentElement.innerHTML = markup;
     this.addEventListeners();
   }
@@ -108,10 +110,5 @@ class TestimonialSliderView {
     });
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonialSliderView = new TestimonialSliderView();
-  testimonialSliderView.render();
-});
 
 export default new TestimonialSliderView();

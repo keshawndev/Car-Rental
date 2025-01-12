@@ -563,11 +563,11 @@
 
     <footer class="footer">
       <nav class="footer__nav">
-        <a href="#" class="footer__nav-link">Home</a>
-        <a href="#" class="footer__nav-link">About</a>
+        <a href="#" class="footer__nav-link">Services</a>
         <a href="#" class="footer__nav-link">Vehicle Models</a>
         <a href="#" class="footer__nav-link">Testimonials</a>
-        <a href="#" class="footer__nav-link">Team</a>
+        <a href="#" class="footer__nav-link">Reviews</a>
+        <a href="#" class="footer__nav-link">Locations</a>
         <a href="#" class="footer__nav-link">Contact</a>
       </nav>
 
@@ -593,6 +593,17 @@
         </a>
       </div>
     </footer>
+    <script>document.addEventListener("DOMContentLoaded", ()=>{
+    const header = document.querySelector(".header");
+    const stickyClass = "header--sticky";
+    const stickyPoint = 100; // Adjust this value to the scroll position where you want the header to become sticky
+    window.addEventListener("scroll", ()=>{
+        if (window.scrollY >= stickyPoint) header.classList.add(stickyClass);
+        else header.classList.remove(stickyClass);
+    });
+});
+
+</script>
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
   </body>

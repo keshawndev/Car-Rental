@@ -1,6 +1,5 @@
 import headerSliderModel from "../models/headerSliderModel.js";
 
-// Define a class to represent the header slider view
 class HeaderSliderView {
   constructor() {
     this.parentElement = document.querySelector(".banner__content__slider");
@@ -21,6 +20,7 @@ class HeaderSliderView {
     `;
     this.parentElement.innerHTML = markup;
     this.addEventListeners();
+    this.updateArrowColors(); // Update arrow colors on render
   }
 
   _generateSlideMarkup(slide, isCurrent = false) {
@@ -60,6 +60,7 @@ class HeaderSliderView {
         nextSlide.classList.remove("slide-in-right");
       }, 500);
       this.currentSlideIndex++;
+      this.updateArrowColors(); // Update arrow colors on next slide
     }
   }
 
@@ -80,6 +81,33 @@ class HeaderSliderView {
         previousSlide.classList.remove("slide-in-left");
       }, 500);
       this.currentSlideIndex--;
+      this.updateArrowColors(); // Update arrow colors on previous slide
+    }
+  }
+
+  updateArrowColors() {
+    const leftArrow = document.querySelector(
+      ".banner__content__slider__icons__left-icon"
+    );
+    const rightArrow = document.querySelector(
+      ".banner__content__slider__icons__right-icon"
+    );
+
+    if (this.currentSlideIndex === 0) {
+      leftArrow.style.color = "#333"; // Darker color for the left arrow on the first slide
+    } else {
+      leftArrow.style.color = "#fff"; // Default color for the left arrow
+    }
+
+    if (
+      this.currentSlideIndex ===
+      document.querySelectorAll(".banner__content__slider__slides__slide")
+        .length -
+        1
+    ) {
+      rightArrow.style.color = "#333"; // Darker color for the right arrow on the last slide
+    } else {
+      rightArrow.style.color = "#fff"; // Default color for the right arrow
     }
   }
 
@@ -96,5 +124,4 @@ class HeaderSliderView {
   }
 }
 
-// Export the HeaderSliderView class
 export default new HeaderSliderView();

@@ -9,11 +9,13 @@ class FleetView {
 
     // Bind event handlers
     this.handleCarSelection = this.handleCarSelection.bind(this);
+    this.handleDropdownChange = this.handleDropdownChange.bind(this);
   }
 
   async init() {
     await this.renderCarSelection();
     this.addCarSelectionHandler();
+    this.addDropdownChangeHandler();
   }
 
   async renderCarSelection() {
@@ -31,6 +33,20 @@ class FleetView {
       )
       .join("");
 
+    const dropdownMarkup = `
+      <select class="our-fleet__selection-box__dropdown hidden">
+        ${Object.values(this.data)
+          .map(
+            (car, index) => `
+          <option value="car${index + 1}" ${
+              `car${index + 1}` === this.currentCar ? "selected" : ""
+            }>${car.name}</option>
+        `
+          )
+          .join("")}
+      </select>
+    `;
+
     const selectedCar = this.data[this.currentCar];
 
     const markup = `
@@ -41,6 +57,7 @@ class FleetView {
         <ul class="our-fleet__selection-box__cars-list">
           ${carListMarkup}
         </ul>
+        ${dropdownMarkup}
         <img src="${
           selectedCar.image
         }" alt="car" class="our-fleet__selection-box__img" />
@@ -70,6 +87,7 @@ class FleetView {
     await new Promise((resolve) => setTimeout(resolve, 0));
     this.addFadeInEffect();
     this.addCarSelectionHandler(); // Re-attach event listeners after rendering
+    this.addDropdownChangeHandler(); // Attach event listener for dropdown
   }
 
   generateCarDetails(car) {
@@ -129,12 +147,24 @@ class FleetView {
     await this.renderCarSelection(); // Re-render view
   }
 
+  async handleDropdownChange(event) {
+    this.currentCar = event.target.value; // Update state
+    await this.renderCarSelection(); // Re-render view
+  }
+
   addCarSelectionHandler() {
     this.parentElement
       .querySelectorAll(".our-fleet__selection-box__cars-list__item")
       .forEach((item) => {
         item.addEventListener("click", this.handleCarSelection);
       });
+  }
+
+  addDropdownChangeHandler() {
+    const dropdown = this.parentElement.querySelector(
+      ".our-fleet__selection-box__dropdown"
+    );
+    dropdown.addEventListener("change", this.handleDropdownChange);
   }
 }
 
