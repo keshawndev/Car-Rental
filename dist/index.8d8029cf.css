@@ -216,7 +216,7 @@ body {
 
 .popup-menu__close-icon {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 5rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -230,7 +230,7 @@ body {
 
 .popup-menu__link {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
 }
