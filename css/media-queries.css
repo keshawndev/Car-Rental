@@ -1,5 +1,33 @@
 /* >1200 px Desktops */
 
+@media (max-width: 1763px) {
+  .header--sticky {
+    padding: 0 30rem 2rem 30rem;
+  }
+
+  .header--sticky .header__nav__logo {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 1662px) {
+  .header--sticky {
+    padding: 0 20rem 2rem 20rem;
+  }
+}
+
+@media (max-width: 1462px) {
+  .header--sticky {
+    padding: 0 15rem 2rem 15rem;
+  }
+}
+
+@media (max-width: 1463px) {
+  .header--sticky {
+    padding: 0 10rem 2rem 10rem;
+  }
+}
+
 @media (max-width: 1330px) {
   .header__nav__navbar__link--shown:link {
     font-size: 1.5rem;
@@ -115,6 +143,9 @@
 }
 
 @media (max-width: 601px) {
+  .header--sticky {
+    display: none;
+  }
   .header__visibility {
     display: flex;
   }

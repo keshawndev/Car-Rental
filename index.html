@@ -40,49 +40,7 @@
   <body>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Header -->
-    <header class="header">
-      <div class="header__contact-bar">
-        <a href="tel:+5624984600" class="header__contact-bar__phone__link"
-          >Contact: (562) 498-4600</a
-        >
-        <a
-          href="mailto:info@example.com"
-          class="header__contact-bar__email__link"
-          >Email: xyz@carrental.com</a
-        >
-      </div>
-      <div class="header__nav">
-        <img
-          src="img/Home/car_rental_logo.gif"
-          class="header__nav__logo"
-          alt="Company Logo"
-        />
-        <nav class="header__nav__navbar">
-          <div class="header__nav__navbar__navdropdown" tabindex="0"></div>
-          <a href="#" class="header__nav__navbar__link--shown">Services</a>
-          <a href="#" class="header__nav__navbar__link--shown"
-            >Vehicle Models</a
-          >
-          <a href="#" class="header__nav__navbar__link--shown">Testimonials</a>
-          <a href="#" class="header__nav__navbar__link--shown">Reviews</a>
-          <a href="#" class="header__nav__navbar__link--shown">Locations</a>
-          <a href="#" class="header__nav__navbar__link--shown">Contact</a>
-        </nav>
-      </div>
-
-      <div class="header__visibility">
-        <img
-          src="img/Home/car_rental_logo.gif"
-          class="header__visibility__logo"
-          alt="Company Logo"
-        />
-
-        <ion-icon
-          name="apps-sharp"
-          class="header__visibility__exspand-icon"
-        ></ion-icon>
-      </div>
-    </header>
+    <header class="header"></header>
 
     <!-- mobile version -->
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -96,7 +54,7 @@
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Customer Services -->
-    <div class="customer-services">
+    <div class="customer-services" id="services">
       <div class="customer-services__top-box">
         <p class="customer-services__top-box__title">Customer Services</p>
         <p class="customer-services__top-box__sub-title">
@@ -237,7 +195,7 @@
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Our Fleet -->
-    <div class="our-fleet">
+    <div class="our-fleet" id="vehicle-models">
       <!-- <p class="our-fleet__title">
         Vehicle Models - Our rental fleet at a glance
       </p>
@@ -421,10 +379,10 @@
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Testimonials -->
-    <div class="testimonials"></div>
+    <div class="testimonials" id="reviews"></div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="locations">
-      <div class="locations__hover">
+      <div class="locations__hover" id="locations">
         <div class="locations__hover__box">
           <div class="locations__hover__box__flex">
             <label class="locations__hover__box__flex__title"
@@ -536,7 +494,7 @@
       </div>
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="partner__box">
+    <div class="partner__box" id="partners">
       <div class="partner__box__content">
         <div class="partner__box__content__title-box">
           <p class="partner__box__content__title-box__title">
@@ -590,7 +548,7 @@
       </div>
     </div>
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="contact-us-center">
+    <div class="contact-us-center" id="contact">
       <div class="contact-us">
         <div class="contact-us__form-box">
           <div class="contact-us__form-box__text">
@@ -761,12 +719,12 @@
 
     <footer class="footer">
       <nav class="footer__nav">
-        <a href="#" class="footer__nav-link">Services</a>
-        <a href="#" class="footer__nav-link">Vehicle Models</a>
-        <a href="#" class="footer__nav-link">Testimonials</a>
-        <a href="#" class="footer__nav-link">Reviews</a>
-        <a href="#" class="footer__nav-link">Locations</a>
-        <a href="#" class="footer__nav-link">Contact</a>
+        <a href="#services" class="footer__nav-link">Services</a>
+        <a href="#vehicle-models" class="footer__nav-link">Vehicle Models</a>
+        <a href="#reviews" class="footer__nav-link">Reviews</a>
+        <a href="#locations" class="footer__nav-link">Locations</a>
+        <a href="#partners" class="footer__nav-link">Partners</a>
+        <a href="#contact" class="footer__nav-link">Contact</a>
       </nav>
 
       <p class="footer__copyright-notice">
